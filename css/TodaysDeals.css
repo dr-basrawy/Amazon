@@ -1,0 +1,300 @@
+*{
+padding: 0px;
+margin: 0px;
+}
+.nav-page:hover{
+    border: 1px solid white;
+}
+.logo-image{
+    max-height: 50px;
+}
+.seachBar-dropDown{
+    background-color: #dadada;
+}
+.seachBar-dropDown:hover{
+    background-color: #dadada;
+}
+.Lang-Flags{
+    object-fit: fit;
+    max-height: 10px;
+}
+.pic-lang::after{
+display: none;
+}
+.nav-two{
+    background-color: #232f3e;
+    height: 39px;
+}
+.secondNavItem{
+    font-size: 0.9rem;
+    color: white;
+}
+
+
+.third-nav {
+    background-color: #fafafa;
+}
+
+.third-nav nav-link {
+    font-size: 12px;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+
+    color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 1.1rem;
+    box-sizing: border-box;
+
+}
+
+.leftSide {
+    box-sizing: border-box;
+}
+
+.col-md-1>span {
+    font-size: 14px;
+}
+
+header>a,
+#selectAll,
+section>a,
+.averageReview,
+.seeMore,
+.relatedItemsTitle {
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+
+}
+
+header>a:hover,
+#selectAll:hover,
+section>a:hover,
+.averageReview:hover,
+.seeMore:hover,
+.relatedItemsTitle:hover {
+    cursor: pointer;
+    color: #da651f;
+    text-decoration: underline;
+
+}
+
+.active {
+    font-weight: bold;
+}
+
+.leftSide h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.checkedStar {
+    color: #da651f;
+}
+
+.badge,
+.card-title,
+.card-subtitle {
+    font-weight: 800;
+    font-size: 12px;
+}
+
+.mainCards:hover {
+    cursor: pointer;
+    color: #e4822c;
+}
+
+.lastPrice {
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+.lastPrice>.oldPrice {
+    text-decoration: line-through;
+}
+
+.relatedItemsCard {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:450px) {
+    .leftSide h2 {
+        font-size: 15px;
+    }
+
+    .leftSide span {
+        font-size: 12px;
+    }
+    .controlButtons>a,.controlButtons>i{
+        font-size: small;
+        padding: 8px;
+    }
+}
+.nav-two {
+    padding: 4px;
+}
+
+.nav-two a,.nav-two .btn{
+    font-size: 14px;
+    padding: 4px;
+}
+@media screen and (max-width:992px) {
+    .nav-two {
+        padding: 5px  !important;
+        box-sizing: border-box;
+    }
+   
+    .nav-two a,.nav-two .btn{
+        font-size: 11px !important;
+        padding: 3px 1px 3px 0px !important;
+
+    }
+}
+@media screen and (max-width:802px) {
+    .nav-two {
+      display: none;
+    }
+   
+}
+
+/* footer */
+:root {
+    --first-footer-color: #232f3e;
+    --second-footer-color: #131A22;
+    --greyT-decoration-color: #999;
+}
+
+
+.signinbtn {
+    background: linear-gradient(to bottom, #f7dfa5, #e6ab16);
+    display: inline-block;
+    text-align: center;
+    text-decoration: none !important;
+    vertical-align: middle;
+}
+
+.start-here:hover {
+    color: red;
+}
+
+/* Back To top Footer */
+.back-top {
+    background-color: #37475a;
+    border-radius: 0 !important;
+}
+
+.back-top:hover {
+    background-color: #505b68;
+}
+
+/* first footer section css start*/
+.first-footer-sec {
+    background-color: var(--first-footer-color);
+}
+
+.footer-column {
+    font-weight: 700;
+    font-size: 1rem;
+    white-space: nowrap;
+    padding-top: 50px;
+}
+
+.footer-ul {
+    text-align: revert;
+    list-style-type: none;
+}
+
+.footer-link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-line: #999;
+}
+
+.footer-li {
+    margin: 0 0 6px;
+}
+
+.footer-line {
+    border-top: 1px solid #3a4553;
+    margin-top: 40px;
+}
+
+.amazon-footer-logo-area .icons .border {
+    border: solid 0.1em #848688 !important;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.amazon-footer-logo-area .icons p {
+    height: 0.4rem;
+}
+
+.amazon-footer-logo-area .icons .english {
+    margin-top: -0.33rem;
+}
+
+/*second footer section css start */
+.second-footer-sec {
+    background-color: var(--second-footer-color);
+}
+
+.footer-section-column {
+    font-size: 0.8rem !important;
+    line-height: 1rem;
+}
+
+.footer-section-column a,
+.footer-section-column span {
+    text-decoration: none;
+}
+
+.footer-section-column a:hover,
+.footer-section-column span:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--greyT-decoration-color);
+}
+
+.second-title-footer {
+    font-size: 0.7rem;
+    line-height: 1rem;
+    color: var(--greyT-decoration-color);
+    text-decoration: underline;
+}
+
+.first-title-footer {
+    color: white;
+}
+
+.card-title{
+    font-size: 17px;
+    font-weight: 600;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .transform-x{
+        transform: translateY(-30px);
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .transform-x{
+        transform: translateY(-50px)  ;
+        -webkit-transform: translateY(-50px)  ;
+        -moz-transform: translateY(-50px)  ;
+        -ms-transform: translateY(-50px)  ;
+        -o-transform: translateY(-50px)  ;
+}
+}

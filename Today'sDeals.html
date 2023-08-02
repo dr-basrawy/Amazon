@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <link rel="stylesheet" href="./css/TodaysDeals.css" />
+  <script src="./js/bootstrap.bundle.min.js" defer></script>
+  <script src="./js/TodayDeals.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Exo&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container-fluid topNavBar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pt-1">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-page me-0 col-lg-1 col-6" href="./index.html">
+          <img class="col-12 logo-image" src="./img/amazon-logo.svg" alt="Amazon-Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-11" id="navbarSupportedContent">
+          <ul class="navbar-nav m-0 d-flex align-items-center col-12">
+            <li class="nav-item nav-page ">
+              <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                <span class="ms-3 text-secondary small">Hello</span>
+                <span><i class="fa-solid fa-location-dot"></i> Select Your Address</span>
+              </a>
+            </li>
+            <li class="nav-item col-7">
+              <div class="input-group mt-3 mb-3">
+                <button type="button" class="btn dropdown-toggle seachBar-dropDown" data-bs-toggle="dropdown">
+                  all
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+                <input type="text" class="form-control" placeholder="search amazon.eg">
+                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </li>
+            <li class="nav-item col-3">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between col-12">
+                <div class="nav-item col-3 nav-page d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-bg-dark pic-lang" href="#" role="button"
+                      id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="Lang-Flags text-bg-dark" src="./img/usa.svg" alt="us">
+                      English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="./img/egypt.svg" alt="egypt">
+                          Arabic</a></li>
+                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="./img/france.svg" alt="france">
+                          French</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <li class="nav-item col-4 nav-page">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="./user/login.html">
+                    <span class="text-secondary small" id="userName">Hello sign In</span>
+                    <span>Account&lists </span>
+                  </a>
+                </li>
+                <li class="nav-item col-2 nav-page">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                    <span class="mt-4">Orders</span>
+                  </a>
+                </li>
+                <li class="nav-item col-2 nav-page">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                    <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="50"
+                      fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                      <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+                      <circle cx="25" cy="27" r="2" />
+                      <circle cx="12" cy="27" r="2" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar row nav-two">
+      <div class="container-fluid d-flex flex-row" style="box-sizing: border-box;">
+        <div class="navbar d-flex">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row" style="box-sizing: border-box;">
+            <button class="p-0 btn navbar-brand secondNavItem" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                class="fa-solid fa-bars"></i> all</button>
+
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" aria-current="page" href="#">Todays Deals</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle secondNavItem" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prime
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Mobile Phones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Appliances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">video Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Toys & Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">grocery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Perfumes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Your amazon.eg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Coupons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">sell</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
+  </div>
+  <div class="container-fluid p-0">
+    <ul class="nav shadow-sm third-nav">
+      <li class="nav-item">
+        <a class="nav-link text-dark fw-bolder" href="#">Today's Deals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Coupons</a>
+      </li>
+    </ul>
+    <div class="p-3" style="box-sizing: border-box">
+      <h3>Today's Deals</h3>
+      <div id="TodayDealsCarousel" class="carousel slide position-relative" data-bs-ride="false">
+        <div class="carousel-inner container-fluid w-75 p-0">
+          <div class="carousel-item active">
+            <div class="row p-0">
+              <div class="col-xl-1 col-md-2 col-3 small">
+                <img src="./img/allDeals.jpg" class="d-block col-12" alt="allDeals" />
+                <div class="fw-bolder">All Deals</div>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small container text-center">
+                <img src="./img/extra discount coupons.jpg" class="d-block col-12" alt="extra discount coupons" />
+                <div>Extra discount coupons</div>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/primeExeclusiveDeals.png" class="d-block col-12" alt="primeExeclusiveDeals" />
+                <span>Prime Exclusive Deals</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/Electronics.jpg" class="d-block col-12" alt="Electronics" />
+                <span>Electronics</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/Home&Kitchen.jpg" class="d-block col-12" alt="Home&Kitchen" />
+                <span>Home& Kitchen</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/health and personal care.jpg" class="d-block col-12" alt="health and personal care" />
+                <span class="small">Health & Personal Care</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/Beauty.jpg" class="d-block col-12" alt="Beauty" />
+                <span>Beauty</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/mobiles&Accessoires.jpg" class="d-block col-12" alt="mobiles&Accessoires" />
+                <span class="small">Mobiles& Accessories</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/supermarket.jpg" class="d-block col-12" alt="supermarket" />
+                <span class="small">Supermarket</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/pc&accessoires.jpg" class="d-block col-12" alt="pc&accessoires" />
+                <span class="small">PC & accessories</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/fashion.jpg" class="d-block col-12" alt="fashion" />
+                <span>Fashion</span>
+              </div>
+              <div class="col-xl-1 col-md-2 col-3 small text-center">
+                <img src="./img/baby1.jpg" class="d-block col-12" alt="baby" />
+                <span>Baby</span>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row p-0">
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/toys.jpg" class="d-block col-12" alt="toys" />
+                <span>Toys</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/office supplies.jpg" class="d-block col-12" alt="office" />
+                <span>Office Supplies</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/tools&home.jpg" class="d-block col-12" alt="tools&home" />
+                <span style="font-size: 12px;">Tools&Home Improvement</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/Automative.jpg" class="d-block col-12" alt="Automative" />
+                <span class="small">Automotive</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/outdoor&Garden.jpg" class="d-block col-12" alt="outdoor&Garden" />
+                <span>Outdoor& Garden</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/sports.jpg" class="d-block col-12" alt="sports" />
+                <span>Sports</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/video Game.jpg" class="d-block col-12" alt="video Game" />
+                <span>Video Game</span>
+              </div>
+              <div class="col-md-2 col-xl-1 col-3 small text-center">
+                <img src="./img/Books.jpg" class="d-block col-12" alt="Books" />
+                <span>Books</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon shadow" aria-hidden="true"></span> -->
+          <i class="rounded-2 p-2 fa-solid fa-angle-left shadow"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon shadow" aria-hidden="true" ></span> -->
+          <i class="rounded-2 p-2 shadow fa-solid fa-angle-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <hr>
+      <div class="row d-flex">
+        <section class="col-xl-2 col-md-3 col-4 leftSide ps-xl-4 ps-1">
+          <header class="d-flex flex-column pb-3">
+            <a class="active" href="#"> All deals</a>
+            <a href="#"> Available</a>
+            <a href="#"> Upcoming</a>
+            <a href="#"> Watchlist</a>
+          </header>
+          <section class="leftSideSections pb-3">
+            <h2>Prime Programs</h2>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="col-1" type="checkbox" name="primeCheckbox" id="primeCheckbox" />
+              <label class="col-10 text-info fw-bold" for="primeCheckbox"><i class="fa-solid fa-check text-warning"></i>
+                Prime</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="col-1" type="checkbox" name="PrimeEarlyAccessDealsCheckbox"
+                id="PrimeEarlyAccessDealsCheckbox" />
+              <label class="col-10 fw-bold" for="PrimeEarlyAccessDealsCheckbox">
+                Prime Early Access deals</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="col-1" type="checkbox" name="PrimeExclusiveDealsCheckbox"
+                id="PrimeExclusiveDealsCheckbox" />
+              <label class="col-10 fw-bold" for="PrimeExclusiveDealsCheckbox">
+                Prime Exclusive deals</label>
+            </span>
+          </section>
+          <section class="leftSideSections pb-3">
+            <h2>Categories</h2>
+            <p id="selectAll" class="fw-bold">Select All</p>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="AutomotiveCheckbox"
+                id="AutomotiveCheckbox" />
+              <label class="col-10 fw-bold" for="AutomotiveCheckbox">
+                Automotive</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="BabyFashionCheckbox"
+                id="BabyFashionCheckbox" />
+              <label class="col-10 fw-bold" for="BabyFashionCheckbox">
+                Baby Fashion</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="BabyProductsCheckbox"
+                id="BabyProductsCheckbox" />
+              <label class="col-10 fw-bold" for="BabyProductsCheckbox">
+                Baby Products</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="BeautyCheckbox" id="BeautyCheckbox" />
+              <label class="col-10 fw-bold" for="BeautyCheckbox">
+                Beauty</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="BooksCheckbox" id="BooksCheckbox" />
+              <label class="col-10 fw-bold" for="BooksCheckbox">
+                Books</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="BoysFashionCheckbox"
+                id="BoysFashionCheckbox" />
+              <label class="col-10 fw-bold" for="BoysFashionCheckbox">
+                Boys' Fashion</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="Computers,Components&Accessories"
+                id="ComputersComponents&Accessories" />
+              <label class="col-10 fw-bold" for="ComputersComponents&Accessories">
+                Computers, Components & Accessories</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="ElectronicsCheckbox"
+                id="ElectronicsCheckbox" />
+              <label class="col-10 fw-bold" for="ElectronicsCheckbox">
+                Electronics</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="FashionCheckbox" id="FashionCheckbox" />
+              <label class="col-10 fw-bold" for="FashionCheckbox">
+                Fashion</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="GardenCheckbox" id="GardenCheckbox" />
+              <label class="col-10 fw-bold" for="GardenCheckbox">
+                Garden</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="GirlsFashionCheckbox"
+                id="GirlsFashionCheckbox" />
+              <label class="col-10 fw-bold" for="GirlsFashionCheckbox">
+                Girls' Fashion</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="GroceryCheckbox" id="GroceryCheckbox" />
+              <label class="col-10 fw-bold" for="GroceryCheckbox">
+                Grocery</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="HealthHouseholdProducts"
+                id="HealthHouseholdProducts" />
+              <label class="col-10 fw-bold" for="HealthHouseholdProducts">
+                Health & Household Products</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="HomeKitchenCheckbox"
+                id="HomeKitchenCheckbox" />
+              <label class="col-10 fw-bold" for="HomeKitchenCheckbox">
+                Home & Kitchen</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="MensFashionCheckbox"
+                id="MensFashionCheckbox" />
+              <label class="col-10 fw-bold" for="MensFashionCheckbox">
+                Men's Fashion</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="MobilephonesCheckbox"
+                id="MobilephonesCheckbox" />
+              <label class="col-10 fw-bold" for="MobilephonesCheckbox">
+                Mobile Phones & Communication Products</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="MusicalInstrumentsCheckbox"
+                id="MusicalInstrumentsCheckbox" />
+              <label class="col-10 fw-bold" for="MusicalInstrumentsCheckbox">
+                Musical Instruments</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="OfficeProductsCheckbox"
+                id="OfficeProductsCheckbox" />
+              <label class="col-10 fw-bold" for="OfficeProductsCheckbox">
+                Office Products</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="PerfumesFragrancesCheckbox"
+                id="PerfumesFragrancesCheckbox" />
+              <label class="col-10 fw-bold" for="PerfumesFragrancesCheckbox">
+                Perfumes & Fragrances</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="PetSuppliesCheckbox"
+                id="PetSuppliesCheckbox" />
+              <label class="col-10 fw-bold" for="PetSuppliesCheckbox">
+                Pet Supplies</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="SportsOutdoorsCheckbox"
+                id="SportsOutdoorsCheckbox" />
+              <label class="col-10 fw-bold" for="SportsOutdoorsCheckbox">
+                Sports & Outdoors</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="ToolsHomeCheckbox" id="ToolsHomeCheckbox" />
+              <label class="col-10 fw-bold" for="ToolsHomeCheckbox">
+                Tools & Home Improvement</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="ToysCheckbox" id="ToysCheckbox" />
+              <label class="col-10 fw-bold" for="ToysCheckbox">
+                Toys</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="VideoGamesCheckbox"
+                id="VideoGamesCheckbox" />
+              <label class="col-10 fw-bold" for="VideoGamesCheckbox">
+                Video Games</label>
+            </span>
+            <span class="d-flex flex-row justify-content-around align-items-baseline">
+              <input class="CategoryCheckBoxes col-1" type="checkbox" name="VideoGamesCheckbox"
+                id="VideoGamesCheckbox" />
+              <label class="col-10 fw-bold" for="VideoGamesCheckbox">
+                Women's Fashion</label>
+            </span>
+          </section>
+          <section class="d-flex flex-column pb-3">
+            <h2>Deal type</h2>
+            <a class="active" href="#"> All deals</a>
+            <a href="#"> Deal of the day</a>
+            <a href="#"> Lightning deals</a>
+            <a href="#"> Best deal </a>
+          </section>
+          <section class="d-flex flex-column pb-3">
+            <h2>Price</h2>
+            <a class="active" href="#"> All</a>
+            <a href="#"> Under EGP400</a>
+            <a href="#"> EGP400 to EGP800</a>
+            <a href="#"> EGP800 to EGP1,200 </a>
+            <a href="#"> EGP1,200 to EGP1,600 </a>
+            <a href="#"> EGP1,600 & above </a>
+          </section>
+          <section class="d-flex flex-column pb-3">
+            <h2>Discount</h2>
+            <a class="active" href="#"> All deals</a>
+            <a href="#"> 10% off or more</a>
+            <a href="#"> 20% off or more</a>
+            <a href="#"> 30% off or more</a>
+            <a href="#"> 40% off or more</a>
+            <a href="#"> 50% off or more</a>
+          </section>
+          <section class="d-flex flex-column pb-3">
+            <h2>Average customer review</h2>
+            <span>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i><span class="averageReview">& up</span>
+            </span>
+            <span>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i><span class="averageReview">& up</span>
+            </span>
+            <span>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i><span class="averageReview">& up</span>
+            </span>
+            <span>
+              <i class="checkedStar fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i><span class="averageReview">& up</span>
+            </span>
+
+          </section>
+        </section>
+
+        <aside class="col-xl-10 col-md-9 col-8 container-fluid">
+          <div class="row ">
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-25 align-self-center" src="./img/fan.jpg" alt="fan image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 23%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save On ATA Fans</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-50 align-self-center" src="./img/washmachine.jpg" alt="washmachine image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 22%
+                    off</span>Top Deal</h4>
+                <p class="d-flex flex-column mb-0">
+                  <span>Egp 18,99.00</span>
+                  <span class="lastPrice">LastPrice:<span class="oldPrice">Egp 24,420.00</span> </span>
+                </p>
+                <p class="card-text mainCards">
+                  Samsung Digital Inverter Washing
+                  Machine 9KG - WW90T4040CX1 AS
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4  w-50 h-50 align-self-center" src="./img/watch.jpg" style="margin-bottom: 1.8rem;"
+                alt="watch image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 46%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save on Oraimo Headphones and Smart Watches</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-5 w-50 h-50 align-self-center" src="./img/security camera.jpg"
+                style="margin-bottom: 1.8rem;" alt="security image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 14%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Security Cameras & DVRs</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-25 align-self-center" src="./img/fan.jpg" alt="fan image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 23%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save On ATA Fans</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-50 align-self-center" src="./img/washmachine.jpg" alt="washmachine image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 22%
+                    off</span>Top Deal</h4>
+                <p class="d-flex flex-column mb-0">
+                  <span>Egp 18,99.00</span>
+                  <span class="lastPrice">LastPrice:<span class="oldPrice">Egp 24,420.00</span> </span>
+                </p>
+                <p class="card-text mainCards">
+                  Samsung Digital Inverter Washing
+                  Machine 9KG - WW90T4040CX1 AS
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4  w-50 h-50 align-self-center" src="./img/watch.jpg" style="margin-bottom: 1.8rem;"
+                alt="watch image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 46%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save on Oraimo Headphones and Smart Watches</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-5 w-50 h-50 align-self-center" src="./img/security camera.jpg"
+                style="margin-bottom: 1.8rem;" alt="security image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 14%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Security Cameras & DVRs</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-25 align-self-center" src="./img/fan.jpg" alt="fan image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 23%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save On ATA Fans</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-50 align-self-center" src="./img/washmachine.jpg" alt="washmachine image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 22%
+                    off</span>Top Deal</h4>
+                <p class="d-flex flex-column mb-0">
+                  <span>Egp 18,99.00</span>
+                  <span class="lastPrice">LastPrice:<span class="oldPrice">Egp 24,420.00</span> </span>
+                </p>
+                <p class="card-text mainCards">
+                  Samsung Digital Inverter Washing
+                  Machine 9KG - WW90T4040CX1 AS
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4  w-50 h-50 align-self-center" src="./img/watch.jpg" style="margin-bottom: 1.8rem;"
+                alt="watch image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 46%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save on Oraimo Headphones and Smart Watches</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-5 w-50 h-50 align-self-center" src="./img/security camera.jpg"
+                style="margin-bottom: 1.8rem;" alt="security image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 14%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Security Cameras & DVRs</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-25 align-self-center" src="./img/fan.jpg" alt="fan image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 23%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save On ATA Fans</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-50 align-self-center" src="./img/washmachine.jpg" alt="washmachine image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 22%
+                    off</span>Top Deal</h4>
+                <p class="d-flex flex-column mb-0">
+                  <span>Egp 18,99.00</span>
+                  <span class="lastPrice">LastPrice:<span class="oldPrice">Egp 24,420.00</span> </span>
+                </p>
+                <p class="card-text mainCards">
+                  Samsung Digital Inverter Washing
+                  Machine 9KG - WW90T4040CX1 AS
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4  w-50 h-50 align-self-center" src="./img/watch.jpg" style="margin-bottom: 1.8rem;"
+                alt="watch image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 46%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save on Oraimo Headphones and Smart Watches</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-5 w-50 h-50 align-self-center" src="./img/security camera.jpg"
+                style="margin-bottom: 1.8rem;" alt="security image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 14%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Security Cameras & DVRs</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-25 align-self-center" src="./img/fan.jpg" alt="fan image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 23%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save On ATA Fans</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-50 align-self-center" src="./img/washmachine.jpg" alt="washmachine image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 22%
+                    off</span>Top Deal</h4>
+                <p class="d-flex flex-column mb-0">
+                  <span>Egp 18,99.00</span>
+                  <span class="lastPrice">LastPrice:<span class="oldPrice">Egp 24,420.00</span> </span>
+                </p>
+                <p class="card-text mainCards">
+                  Samsung Digital Inverter Washing
+                  Machine 9KG - WW90T4040CX1 AS
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4  w-50 h-50 align-self-center" src="./img/watch.jpg" style="margin-bottom: 1.8rem;"
+                alt="watch image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 46%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save on Oraimo Headphones and Smart Watches</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-5 w-50 h-50 align-self-center" src="./img/security camera.jpg"
+                style="margin-bottom: 1.8rem;" alt="security image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 14%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Security Cameras & DVRs</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-25 align-self-center" src="./img/fan.jpg" alt="fan image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 23%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save On ATA Fans</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4 w-50 align-self-center" src="./img/washmachine.jpg" alt="washmachine image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 22%
+                    off</span>Top Deal</h4>
+                <p class="d-flex flex-column mb-0">
+                  <span>Egp 18,99.00</span>
+                  <span class="lastPrice">LastPrice:<span class="oldPrice">Egp 24,420.00</span> </span>
+                </p>
+                <p class="card-text mainCards">
+                  Samsung Digital Inverter Washing
+                  Machine 9KG - WW90T4040CX1 AS
+                </p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-4  w-50 h-50 align-self-center" src="./img/watch.jpg" style="margin-bottom: 1.8rem;"
+                alt="watch image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 46%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Save on Oraimo Headphones and Smart Watches</p>
+              </div>
+            </div>
+            <div class="card col-xl-3 col-md-6 col-12">
+              <img class="pt-5 w-50 h-50 align-self-center" src="./img/security camera.jpg"
+                style="margin-bottom: 1.8rem;" alt="security image">
+              <div class="card-body h-25">
+                <h4 class="card-title text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Up to 14%
+                    off</span>Deal</h4>
+                <p class="card-text mainCards">Security Cameras & DVRs</p>
+              </div>
+            </div>
+
+          </div>
+        </aside>
+        <div class="container-fluid d-flex justify-content-center mt-3">
+          <ul class="pagination">
+            <li class="page-item controlButtons text-secondary"><a class="page-link text-secondary" href="#"><i
+                  class="fa-solid fa-arrow-left-long"></i>Previous</a></li>
+            <li class="page-item"><a class="text-dark page-link" href="#">1</a></li>
+            <li class="page-item"><a class="text-dark page-link" href="#">2</a></li>
+            <li class="page-item"><a class="text-dark page-link" href="#">3</a></li>
+            <li class="page-item"><a class="text-dark page-link" href="#">...</a></li>
+            <li class="page-item"><a class="text-dark page-link" href="#">13</a></li>
+            <li class="page-item controlButtons">
+              <a class="text-dark page-link" href="#">Next
+                <i class="fa-solid fa-arrow-right-long"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="p-3" style="box-sizing: border-box">
+      <span class="d-flex align-items-baseline">
+        <h3 class="me-1">Related to Items you've viewed</h3><span class="seeMore">See more</span>
+      </span>
+      <div id="RelatedItemsCarousel" class="carousel slide position-relative" data-bs-ride="false">
+        <div class="carousel-inner container-fluid p-0" style="max-width: 85%;">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/playStation.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Disc Edition Face Plates Cover Skins Shell Panels for PS5 Console, Playstation 5 Accessori...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">1,001</span>
+                    </span>
+                  </div>
+                  <h4 class="card-subtitle text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Deal</span>Top
+                    deal</h4>
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP1,119.20</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 2 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/laptophousing.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Replacement Faceplate Cover Housing Shell Case for Sony Playstation 5 Ultra HD Digital Edition
+                      Console...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">423</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP750.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 3 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/psSkin.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      DMLNN PS5 Silicone Skin Cover, Dustproof Anti-Scratch Anti-Fall Waterproof Protector Case for Sony
+                      ...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">418</span>
+                    </span>
+                  </div>
+
+                  <p class="card-textd-flex flex-column ">
+                    <span>EGP798.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 3 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/ps5.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      PS5 Console Cover, Hard Shockproof PlayStation 5 Console Skin Case, A ...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">3</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP1,200.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 3 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/Antiscratch.jpg" alt="Antiscratch image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Anti-Scratch Waterproof Dust Cover Sleeve for PlayStation 5 Digital Edition and Standard Edition
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP350.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Only 1 left in stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/ps5 Alahli.jpg" alt="Alahli image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      PS5 CD Disk Al Ahly SC #4 Skin For PlayStation 5
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP700.00</span>
+                    <span>EGP26.00 Shipping</span>
+                    <span>Usually ships within 2 to 3 days...</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row p-0">
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/ps5 standard.jpg" alt="standard image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      PS5 Standard Cover GRAY Camouflage - KSA Version
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP4,529.00,</span>
+                    <span>Get it Jul 30–Aug 1</span>
+                    <span>EGP 26.00 shipping</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindle.jpg" alt="kindle image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      All-new Kindle (2022
+                      release) — The lightest
+                      and most compact
+                      Kindle, now with a 6"
+                      300 ppi high-resolutio...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star-half-stroke"></i><span class="averageReview">69</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP2,999.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindleCase.jpg" alt="kindle image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Kindle 6 Inch Protective
+                      Case Cover Interior
+                      Padded Shockproof
+                      Pocket Pouch Durable
+                      Bag with Zipper Closur...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">26</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP450.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindleleatherCase.jpg"
+                  alt="kindleleatherCase image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Premium Pu leather Case
+                      for Kindle Paperwhite
+                      1 lth Generation and
+                      Kindle Paperwhite
+                      Signature Edition (6.8
+                      inch, 2021 Release) -...
+                    </span>
+
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP449.00,</span>
+                    <span>Get it Aug 2–3</span>
+                    <span>EGP 26.00 shipping</span>
+                    <span>Usually ships within 2 to 3 days...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindleOases.jpg" alt="kindleOases image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Kindle Oasis (10th Gen),
+                      Now with adjustable
+                      warm light, 7" Display,
+                      Waterproof, 32 GB, Wi-
+                      Fi, Graphite
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star-half-stroke"></i></i><span class="averageReview">116</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP7,999.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/Nexus.jpg" alt="Nexus image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Nexus Essentials Training Tops For Men
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">3</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP450.00</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row p-0">
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/MSI.jpg" alt="standard image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      MSI Creator 15
+                      Professional Laptop:
+                      15.6" UHD OLED 4K DCI-
+                      P3 100% Display, Intel
+                      Core i7-11800H, NVIDIA
+                      GeForce RTX 3060, 16GB
+                      RAM, 512GB NVME SS...
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP59,999.00</span>
+
+                    <span>EGP 26.00 shipping</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/GF63.jpg" alt="GF63 image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      GF63 Thin 1 IUC
+                      (RTX3050, GDDR6 4GB)
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP27,499.00</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/Hp Victus.jpg" alt="Victus image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Victus 16-el OOOne
+                      Gaming Laptop - Ryzen
+                      5 6600H 6-Cores, 16GB
+                      RAM DDR5-4800, 512GB
+                      SSD, NVIDIA GeForce
+                      RTX 3050 4GB GDDR6...
+
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP30,404.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/MSI stealth.jpg" alt="kindleleatherCase image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      MSI GS66 Stealth 11UG
+                      (i7 11800H / 16GB / ITB
+                      SSD/RTX 3070 8GB /
+                      360Hz / Win 10)
+                    </span>
+
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP64,762.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/legion7.jpg" alt="legion7 image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Legion7 16ITHg6 ,16WQXGA_AG_500N_165_N_HDR_SRGB ,STORM_GREY ,CORE_I7-11800H_2.3G_8C_MB...
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-regular fa-star"></i>
+                      <i class="checkedStar fa-regular fa-star"></i></i><span class="averageReview">5</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP80,850.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                    <span>Only 4 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/legon5pro.jpg" alt="Nexus image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Legion 5 Pro 16ACH6H
+                      Gaming Laptop Ryzen7-
+                      5800H 16" WQXGA
+                      3070
+                      8GB-2x 8GB Ram-ITB
+                      SSD- Windows 11...
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP71,820.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#RelatedItemsCarousel" data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon shadow" aria-hidden="true"></span> -->
+          <i class="rounded-2 p-2 fa-solid fa-angle-left shadow"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#RelatedItemsCarousel" data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon shadow" aria-hidden="true" ></span> -->
+          <i class="rounded-2 p-2 shadow fa-solid fa-angle-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="p-3" style="box-sizing: border-box">
+      <span class="d-flex align-items-baseline">
+        <h3 class="me-1">Related to Items you've viewed</h3><span class="seeMore">See more</span>
+      </span>
+      <div id="InspiredbyBrowsingHistoryCarousel" class="carousel slide position-relative" data-bs-ride="false">
+        <div class="carousel-inner container-fluid p-0" style="max-width: 85%;">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/playStation.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Disc Edition Face Plates Cover Skins Shell Panels for PS5 Console, Playstation 5 Accessori...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">1,001</span>
+                    </span>
+                  </div>
+                  <h4 class="card-subtitle text-danger"><span class="badge rounded-1 bg-danger p-2 me-1">Deal</span>Top
+                    deal</h4>
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP1,119.20</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 2 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/laptophousing.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Replacement Faceplate Cover Housing Shell Case for Sony Playstation 5 Ultra HD Digital Edition
+                      Console...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">423</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP750.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 3 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/psSkin.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      DMLNN PS5 Silicone Skin Cover, Dustproof Anti-Scratch Anti-Fall Waterproof Protector Case for Sony
+                      ...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">418</span>
+                    </span>
+                  </div>
+
+                  <p class="card-textd-flex flex-column ">
+                    <span>EGP798.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 3 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/ps5.jpg" alt="fan image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      PS5 Console Cover, Hard Shockproof PlayStation 5 Console Skin Case, A ...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">3</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP1,200.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450 Only 3 left in
+                      stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/Antiscratch.jpg" alt="Antiscratch image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Anti-Scratch Waterproof Dust Cover Sleeve for PlayStation 5 Digital Edition and Standard Edition
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP350.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 29</span>
+                    <span>Only 1 left in stock-order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/ps5 Alahli.jpg" alt="Alahli image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      PS5 CD Disk Al Ahly SC #4 Skin For PlayStation 5
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP700.00</span>
+                    <span>EGP26.00 Shipping</span>
+                    <span>Usually ships within 2 to 3 days...</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row p-0">
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/ps5 standard.jpg" alt="standard image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      PS5 Standard Cover GRAY Camouflage - KSA Version
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP4,529.00,</span>
+                    <span>Get it Jul 30–Aug 1</span>
+                    <span>EGP 26.00 shipping</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindle.jpg" alt="kindle image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      All-new Kindle (2022
+                      release) — The lightest
+                      and most compact
+                      Kindle, now with a 6"
+                      300 ppi high-resolutio...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star-half-stroke"></i><span class="averageReview">69</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP2,999.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindleCase.jpg" alt="kindle image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Kindle 6 Inch Protective
+                      Case Cover Interior
+                      Padded Shockproof
+                      Pocket Pouch Durable
+                      Bag with Zipper Closur...
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">26</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP450.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindleleatherCase.jpg"
+                  alt="kindleleatherCase image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Premium Pu leather Case
+                      for Kindle Paperwhite
+                      1 lth Generation and
+                      Kindle Paperwhite
+                      Signature Edition (6.8
+                      inch, 2021 Release) -...
+                    </span>
+
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP449.00,</span>
+                    <span>Get it Aug 2–3</span>
+                    <span>EGP 26.00 shipping</span>
+                    <span>Usually ships within 2 to 3 days...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/kindleOases.jpg" alt="kindleOases image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Kindle Oasis (10th Gen),
+                      Now with adjustable
+                      warm light, 7" Display,
+                      Waterproof, 32 GB, Wi-
+                      Fi, Graphite
+
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star-half-stroke"></i></i><span class="averageReview">116</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP7,999.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/Nexus.jpg" alt="Nexus image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Nexus Essentials Training Tops For Men
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star-half-stroke"></i>
+                      <i class="fa-regular fa-star"></i>
+                      <i class="fa-regular fa-star"></i><span class="averageReview">3</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP450.00</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row p-0">
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/MSI.jpg" alt="standard image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      MSI Creator 15
+                      Professional Laptop:
+                      15.6" UHD OLED 4K DCI-
+                      P3 100% Display, Intel
+                      Core i7-11800H, NVIDIA
+                      GeForce RTX 3060, 16GB
+                      RAM, 512GB NVME SS...
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP59,999.00</span>
+
+                    <span>EGP 26.00 shipping</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/GF63.jpg" alt="GF63 image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      GF63 Thin 1 IUC
+                      (RTX3050, GDDR6 4GB)
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP27,499.00</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/Hp Victus.jpg" alt="Victus image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Victus 16-el OOOne
+                      Gaming Laptop - Ryzen
+                      5 6600H 6-Cores, 16GB
+                      RAM DDR5-4800, 512GB
+                      SSD, NVIDIA GeForce
+                      RTX 3050 4GB GDDR6...
+
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP30,404.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/MSI stealth.jpg" alt="kindleleatherCase image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      MSI GS66 Stealth 11UG
+                      (i7 11800H / 16GB / ITB
+                      SSD/RTX 3070 8GB /
+                      360Hz / Win 10)
+                    </span>
+
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP64,762.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                    <span>Only 1 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/legion7.jpg" alt="legion7 image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Legion7 16ITHg6 ,16WQXGA_AG_500N_165_N_HDR_SRGB ,STORM_GREY ,CORE_I7-11800H_2.3G_8C_MB...
+                    </span>
+                    <span>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-solid fa-star"></i>
+                      <i class="checkedStar fa-regular fa-star"></i>
+                      <i class="checkedStar fa-regular fa-star"></i></i><span class="averageReview">5</span>
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP80,850.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                    <span>Only 4 left in stock - order...</span>
+                  </p>
+                </div>
+              </div>
+              <div class="card relatedItemsCard col-xl-2 col-md-4 col-6 border-0">
+                <img class="pt-4 w-100 align-self-center" src="./img/legon5pro.jpg" alt="Nexus image">
+                <div class="card-body h-25">
+                  <div class="card-title  d-flex flex-column">
+                    <span class="relatedItemsTitle">
+                      Legion 5 Pro 16ACH6H
+                      Gaming Laptop Ryzen7-
+                      5800H 16" WQXGA
+                      3070
+                      8GB-2x 8GB Ram-ITB
+                      SSD- Windows 11...
+                    </span>
+                  </div>
+
+                  <p class="card-text d-flex flex-column">
+                    <span>EGP71,820.00</span>
+                    <span>Get it as soon as Tomorrow, Jul 30</span>
+                    <span>Fulfilled by Amazon - FREE Shipping on orders over EGP 450</span>
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#InspiredbyBrowsingHistoryCarousel"
+          data-bs-slide="prev">
+          <!-- <span class="carousel-control-prev-icon shadow" aria-hidden="true"></span> -->
+          <i class="rounded-2 p-2 fa-solid fa-angle-left shadow"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#InspiredbyBrowsingHistoryCarousel"
+          data-bs-slide="next">
+          <!-- <span class="carousel-control-next-icon shadow" aria-hidden="true" ></span> -->
+          <i class="rounded-2 p-2 shadow fa-solid fa-angle-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <hr>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-flex flex-column align-items-center">
+          <span>See personalized recommendations</span>
+          <button class="btn btn-warning col-md-2 col-3 fw-bold">Sign in</button>
+          <span>New customer? <a href="#" class="link-success text-decoration-none">Start here.</a></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="container-fluid m-0 p-0">
+    <section class="section_container">
+      <div class="container-fluid back-top btn cursor-pointer p-3 mt-1 text-center text-light  ">
+        <a class="back-to-top text-decoration-none text-light " href="#">Back to top</a>
+      </div>
+    </section>
+    <!-- First Footer -->
+    <footer class="first-footer-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Get to Know Us</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Careers</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Blog</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">About Amazon</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Investor Relations</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Devices</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Tours</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Make Money with Us</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Sell products on Amazon</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Sell apps on Amazon</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Become an Affiliate</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Advertise Your Products</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Self-Publish with Us</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Host an Amazon Hub</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">See More Make Money with Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Amazon Payment Products</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Business Card</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Shop with Points</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Reload Your Balance</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Currency Converter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Let Us Help You</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Amazon and COVID-19</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Your Account</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Your Orders</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Shipping Rates & Policies</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Returns & Replacements</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Manage Your Content and Devices</a>
+              </li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Assistant</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+      </div>
+      <div class="container amazon-footer-logo-area p-4">
+        <div class="row pt-2 pb-2 justify-content-center text-center">
+          <div class="col-md-5 footer-lg-img">
+            <img src="./img/image20.png" alt="amazon logo">
+          </div>
+          <div class="col-md-7 icons d-flex gap-2 text-center ">
+            <div class="border btn m-0 p-0">
+              <p class="english btn text-light">English</p>
+            </div>
+            <div class="border btn m-0 p-0">
+              <p class="btn m-0 p-0  text-light">$ USD - U.S. Dollar</p>
+            </div>
+            <div class="border btn m-0 p-0 ">
+              <div class="d-flex text-center p-0">
+                <img class="p-1" src="./img/us.png" alt="USA LOGO" width="30rem" height="20rem">
+                <p class="text-light text-center">United States</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Second Foot… -->
+    <footer class="second-footer-sec pt-5 pb-5">
+      <div class="container text-decoration-none">
+        <div class="row">
+          <div class="col">
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Music</span><br>
+                <span class="second-title-footer">Stream millions <br> of songs</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Alexa</span><br>
+                <span class="second-title-footer">Actionable Analytics <br> for the Web</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Rapids</span><br>
+                <span class="second-title-footer">Fun stories for <br> kids on the go</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">CreateSpace</span><br>
+                <span class="second-title-footer">Indie Print Publishing <br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">IMDbPro</span><br>
+                <span class="second-title-footer">Get Info Entertainment <br> Professionals Need</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Ring</span><br>
+                <span class="second-title-footer">Smart Home <br> Security Systems</span>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Advertising</span><br>
+                <span class="second-title-footer">Find, attract, and <br> engage customers</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Sell on Amazon</span><br>
+                <span class="second-title-footer">Start a Selling <br> Account</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Web Services</span><br>
+                <span class="second-title-footer">Scalable Cloud <br> Computing Services</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">DPReview</span><br>
+                <span class="second-title-footer">Digital <br> Photography</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Kindle Direct Publishing</span><br>
+                <span class="second-title-footer">Indie Digital Publishing <br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">eero WiFi</span><br>
+                <span class="second-title-footer">Stream 4K Video<br> in Every Room</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4 text-left">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Drive</span><br>
+                <span class="second-title-footer">Cloud storage <br> from Amazon</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4 text-light">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Business</span><br>
+                <span class="second-title-footer">Everything For<br> Your Business</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Audible</span><br>
+                <span class="second-title-footer">Listen to Books & Original<br> Audio
+                  Performances</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">East Dane</span><br>
+                <span class="second-title-footer">Designer Men's<br> Fashion</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Prime Video Direct</span><br>
+                <span class="second-title-footer">Video Distribution<br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Neighbors App </span><br>
+                <span class="second-title-footer">Real-Time Crime<br> & Safety Alerts</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">6pm</span><br>
+                <span class="second-title-footer">Score deals<br> on fashion brands</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">AmazonGlobal</span><br>
+                <span class="second-title-footer">Ship Orders<br> Internationally</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Book Depository</span><br>
+                <span class="second-title-footer">Books With Free<br> Delivery Worldwide</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Fabric</span><br>
+                <span class="second-title-footer">Sewing, Quilting<br> & Knitting</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Shopbop</span><br>
+                <span class="second-title-footer">Designer<br> Fashion Brands</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Subscription Boxes</span><br>
+                <span class="second-title-footer">Top subscription boxes – right to your door</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">AbeBooks</span><br>
+                <span class="second-title-footer">Books, art<br> & collectibles</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Home Services</span><br>
+                <span class="second-title-footer">Experienced Pros<br> Happiness Guarantee</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Box Office Mojo</span><br>
+                <span class="second-title-footer">Find Movie<br> Box Office Data</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Goodreads</span><br>
+                <span class="second-title-footer">Book reviews<br> & recommendations</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Woot!</span><br>
+                <span class="second-title-footer">Deals and <br> Shenanigans</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">PillPack</span><br>
+                <span class="second-title-footer">Pharmacy Simplified</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">ACX </span><br>
+                <span class="second-title-footer">Audiobook Publishing<br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Ignite</span><br>
+                <span class="second-title-footer">Sell your original<br> Digital Educational</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">ComiXology</span><br>
+                <span class="second-title-footer">Thousands of<br> Digital Comics</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">IMDb</span><br>
+                <span class="second-title-footer">Movies, TV<br> & Celebrities</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Zappos</span><br>
+                <span class="second-title-footer">Shoes &<br> Clothing</span>
+              </a>
+            </div>
+            <div class="footer-section-column">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Second Chance</span><br>
+                <span class="second-title-footer">Pass it on, trade it in,<br> give it a second
+                  life</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

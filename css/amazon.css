@@ -8,6 +8,28 @@ body{
     padding: 0%;
     position: relative;
 }
+.nav-page:hover{
+    border: 1px solid white;
+}
+.logo-image{
+    max-height: 50px;
+}
+.seachBar-dropDown{
+    background-color: #dadada;
+}
+.seachBar-dropDown:hover{
+    background-color: #dadada;
+}
+.Lang-Flags{
+    object-fit: fit;
+    max-height: 10px;
+}
+.pic-lang::after{
+display: none;
+}
+#allbtn{
+    cursor: pointer;
+}
 .big{
     position: absolute;
     z-index: 1;
@@ -108,7 +130,44 @@ body{
 
 }
 
+.third-nav nav-link {
+    font-size: 12px;
+}
 
+.fa-angle-left,
+.fa-angle-right {
+
+    color: black;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    font-size: 1.1rem;
+    box-sizing: border-box;
+
+}
+.relatedItemsTitle {
+    color: #007185;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Exo', sans-serif;
+
+}
+.relatedItemsTitle:hover {
+    cursor: pointer;
+    color: #da651f;
+    text-decoration: underline;
+
+}
+.checkedStar {
+    color: #da651f;
+}
+.badge,
+.card-title,
+.card-subtitle {
+    font-weight: 800;
+    font-size: 12px;
+}
 /* footer */
 :root {
     --first-footer-color: #232f3e;
