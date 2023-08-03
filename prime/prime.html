@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/all.min.css" />
+  <link rel="stylesheet" href="../css/TodaysDeals.css" />
+    <style>
+        
+        a {
+            color: white;
+            font-size: large;
+        }
+
+        button {
+            font-size: x-large !important;
+            font-weight: 500 !important;
+        }
+
+        h1 {
+            font-size: 50px !important;
+            font-weight: 700 !important;
+        }
+
+        .bt {
+            background-color: rgb(170, 183, 184);
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+            border: 0;
+            align-self: center;
+            margin: 50px !important;
+            padding: 20px;
+        }
+        .scrolll {
+             display: none;
+             -ms-overflow-style: none;
+
+        }
+        button h3{
+            padding: 20px;
+        }
+        .b-t-top{
+            border: none;
+            background-color: rgb(55,71,90) ;
+            color: white;
+            width: 100%;
+            margin-top: 150px;
+            padding: 20px;
+            font-size: 20px !important;
+
+        }
+        .card{
+            border: 0;
+            margin-bottom: 50px;
+        }
+        #back ,#next{
+            background-color: gray;
+            height: 100px;
+            width:  100px;
+            border-radius: 50%;
+            align-self: center;
+        }
+
+      
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid topNavBar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pt-1">
+          <div class="container-fluid">
+            <a class="navbar-brand nav-page me-0 col-lg-1 col-6" href="../index.html">
+              <img class="col-12 logo-image" src="../img/amazon-logo.svg" alt="Amazon-Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-11" id="navbarSupportedContent">
+              <ul class="navbar-nav m-0 d-flex align-items-center col-12">
+                <li class="nav-item nav-page ">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                    <span class="ms-3 text-secondary small">Hello</span>
+                    <span><i class="fa-solid fa-location-dot"></i> Select Your Address</span>
+                  </a>
+                </li>
+                <li class="nav-item col-7">
+                  <div class="input-group mt-3 mb-3">
+                    <button type="button" class="btn dropdown-toggle seachBar-dropDown" data-bs-toggle="dropdown">
+                      all
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                    </ul>
+                    <input type="text" class="form-control" placeholder="search amazon.eg">
+                    <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </div>
+                </li>
+                <li class="nav-item col-3">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between col-12">
+                    <div class="nav-item col-3 nav-page d-flex align-items-center">
+                      <div class="dropdown">
+                        <a class="nav-link dropdown-toggle text-bg-dark pic-lang" href="#" role="button"
+                          id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img class="Lang-Flags text-bg-dark" src="../img/usa.svg" alt="us">
+                          English
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                          <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="../img/egypt.svg" alt="egypt">
+                              Arabic</a></li>
+                          <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="../img/france.svg" alt="france">
+                              French</a></li>
+                        </ul>
+                      </div>
+                    </div>
+    
+                    <li class="nav-item col-4 nav-page">
+                      <a class="nav-link active d-flex flex-column" aria-current="page" href="./user/login.html">
+                        <span class="text-secondary small" id="userName">Hello sign In</span>
+                        <span>Account&lists </span>
+                      </a>
+                    </li>
+                    <li class="nav-item col-2 nav-page">
+                      <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                        <span class="mt-4">Orders</span>
+                      </a>
+                    </li>
+                    <li class="nav-item col-2 nav-page">
+                      <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                        <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="50"
+                          fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+                          <circle cx="25" cy="27" r="2" />
+                          <circle cx="12" cy="27" r="2" />
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+    
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar row nav-two">
+          <div class="container-fluid d-flex flex-row" style="box-sizing: border-box;">
+            <div class="navbar d-flex">
+    
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row" style="box-sizing: border-box;">
+                <button class="p-0 btn navbar-brand secondNavItem" type="button" data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                    class="fa-solid fa-bars"></i> all</button>
+    
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" aria-current="page" href="#">Todays Deals</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle secondNavItem" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Prime
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Mobile Phones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Electronics</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Appliances</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Fashion</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">video Games</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Toys & Game</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">grocery</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Perfumes</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Your amazon.eg</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Coupons</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">Help</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link secondNavItem" href="#">sell</a>
+                </li>
+              </ul>
+            </div>
+    
+          </div>
+        </nav>
+      </div>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+      </div>
+    <div class="scrolll container-fluid d-flex text-center p-5 gap-4 align-items-center flex-column "
+        style="color: white; background-color: rgb(35, 47, 62)">
+        <img style="height: 44px; width: fit-content" src="logo.png" alt="" />
+        <h1>
+            Amazon Customer, we're giving you a
+            <span style="color: rgb(26, 152, 255)">30 day free trial</span> of
+            Amazon Prime
+        </h1>
+        <h4>
+            Only EGP 29.00/month after trial. Cancel anytime. Terms and conditions
+            apply
+        </h4>
+        <a href="#plans">Explore other plans</a>
+        <button class="btn" style="background-color: rgb(255, 167, 36)">
+            start your free 30-day trial
+        </button>
+    </div>
+    <div class="container-fluid p-4 text-center" style="background-color: rgb(26, 152, 255); color: white">
+        <h3>Take a look at what's included with Prime membership</h3>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <div style="
+          width: 50px;
+          height: 50px;
+          border: 50px solid rgb(26, 152, 255);
+          border-color: rgb(26, 152, 255) white white;
+        "></div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <h1 style="color: rgb(26, 152, 255)">Check out what's included</h1>
+    </div>
+
+    <div class="d-flex text-center p-5">
+
+        <button id="back" class="btn">←</button>
+
+
+        <div class="container-fluid mt-4 d-flex overflow-hidden g-4 row flex-nowrap  w-100 " id="cards">
+            <div  class="col-sm-6 col-md-4 ccard   ">
+                <div class="card">
+                    <img src="1.jpg"  class="card-img-top" alt="Image 2" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(26, 152, 255);">Monthly gaming perks</h5>
+                        <p class="card-text">Free games, exclusive in-game content and a free Twitch channel subscription every month.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 ccard">
+                <div class="card">
+                    <img src="2.jpg"  class="card-img-top" alt="Image 2" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(26, 152, 255);">Fast, free delivery</h5>
+                        <p class="card-text">Enjoy same day delivery to Cairo and Giza and next day delivery across most of Egypt on over half a million items.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 ccard">
+                <div class="card">
+                    <img src="3.jpg"  class="card-img-top" alt="Image 2" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(26, 152, 255);">Popular films and TV programs</h5>
+                        <p class="card-text">Stream international TV shows and movies, plus award-winning Amazon Originals from your favorite devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4 ccard">
+                <div class="card">
+                    <img src="4.jpg"  class="card-img-top" alt="Image 2" />
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: rgb(26, 152, 255);">Exclusive deals</h5>
+                        <p class="card-text">Get early access to in-demand deals and save big during annual events, like Prime Day.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <button id="next" class="btn">→</button>
+
+
+    </div>
+
+
+    <div class=" scrolll container-fluid d-flex text-center p-5 gap-4 align-items-center flex-column" id="plans"  style="color: white; background-color: rgb(35, 47, 62)">
+        <h1 style="color: rgb(26, 152, 255)">Choose your plan</h1>
+        <h4 id="plan">   Enjoy your 30 day free trial of Prime. After that, Prime is just EGP 29.00 per month. Cancel at any time.</h4>
+
+       <div class="d-flex "  >
+        <label class="d-flex" for="monthly">
+            <div class="container-fluid  p-4 m-3 "  style="background-color: white; width: 300px;height: 300px; border-radius: 10px;">
+                <input type="radio" style="width: 100%; height: 50px;" id="monthly" name="plan" value="Monthly">
+                <h5 style="color: black;">Monthly Plan</h5>
+                <h1 style="color: black;">EGP 29.00 </h1>
+                <h3 style="color: black;">per month after trial</h3>
+            </div>
+        </label>
+        <label class="d-flex"  for="annual">
+            <div class="container-fluid  p-4 m-3" style="background-color: white; width: 300px;height: 300px; border-radius: 10px;">
+                <input type="radio" style="width: 100%; height: 50px;" id="annual" name="plan" value="Annual">
+                <h5 style="color: black;">Monthly Plan</h5>
+                <h1 style="color: black;">EGP 29.00 </h1>
+                <h3 style="color: black;">per month after trial</h3>
+            </div>
+        </label>
+       </div>
+       <button class="btn" style="background-color: rgb(255, 167, 36)">
+        Try Prime free for 30 days
+    </button>
+    
+    </div>
+    <div class="container-fluid p-4 text-center d-flex justify-content-center" style="background-color: rgb(26, 152, 255); color: white">
+        <div class="w-75 ">
+            <h3 style="font-weight: 500;font-size: 40px;">More ways to subscribe:        </h3>
+              <h3 style="font-weight: 400; font-size: 30px;">Orange customers: Call #266# from your Orange mobile number to subscribe to Prime and start your 30-day free trial along with 1GB free on Amazon. Get Prime FREE with Orange Premier.        </h3>
+             <h3 style="font-weight: 400;font-size: 25px;">*Terms and conditions apply        </h3>
+        </div>
+    
+    </div>
+    <h1 class="text-center p-5" style="color: rgb(26, 152, 255)">Choose your plan</h1>
+
+       <div class="container ">
+        <button class="btn d-flex w-100 justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+            <h3>                                     How do I sign up for a free trial? What happens after the free trial period?</h3>
+            <h3>+</h3>
+          </button>
+        <div class="collapse" id="collapse1">
+          <h2 class="p-4 " style="font-weight: 300;" >
+            To sign up for your free 30 day free trial, please click on “Try Prime free for 30 days” button above. Although you will not be charged for your 30 day trial of Prime, we do need a valid payment option on file in order to start enjoying your trial and Prime’s benefits.
+        </h2>
+        </div>
+        <div class="div w-100" style="height: 3px; background-color:rgb(26, 152, 255) ;"></div>
+
+
+
+        <button class="btn d-flex w-100 justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+            <h3>                                     What benefits does Prime offer?</h3>
+            <h3>+</h3>
+          </button>
+        <div class="collapse" id="collapse2">
+          <h2 class="p-4 " style="font-weight: 300;" >
+            Prime offers you the best of entertainment including movies, TV series, Amazon Originals, free PC games and in game content with Prime Gaming, and fast and free delivery.
+        </h2>
+        </div>
+        <div class="div w-100" style="height: 3px; background-color:rgb(26, 152, 255) ;"></div>
+
+
+
+        <button class="btn d-flex w-100 justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+            <h3>                                     What methods can I use to sign up for Prime?</h3>
+            <h3>+</h3>
+          </button>
+        <div class="collapse" id="collapse3">
+          <h2 class="p-4 " style="font-weight: 300;" >
+            To sign up, you must have a valid payment method on file. Payment methods accepted include international and domestic Visa and MasterCard credit and debit cards. Don't have a credit or debit card? Call #266# from your Orange mobile number to subscribe to Amazon Prime and start your free trial
+        </h2>
+        </div>
+        <div class="div w-100" style="height: 3px; background-color:rgb(26, 152, 255) ;"></div>
+
+
+
+        <button class="btn d-flex w-100 justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapseExample">
+            <h3>                                     What if I am already a Prime member on a different Amazon website?</h3>
+            <h3>+</h3>
+          </button>
+        <div class="collapse" id="collapse4">
+          <h2 class="p-4 " style="font-weight: 300;" >
+            If you live in Egypt and have Amazon Prime on another Amazon website, we encourage you to change your subscription to Amazon.eg. Enjoy a wide selection of Egyptian brands with Prime delivery, customer service in Egypt and access to a wide range of movies and series on Prime Video. And all this for EGP 29.00/month or EGP 249.00/year!
+        </h2>
+        </div>
+        <div class="div w-100" style="height: 3px; background-color:rgb(26, 152, 255) ;"></div>
+
+
+        <button class="btn d-flex w-100 justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapseExample">
+            <h3>      If I am not satisfied, how do I cancel? Will I get a refund?</h3>
+            <h3>+</h3>
+          </button>
+        <div class="collapse" id="collapse5">
+          <h2 class="p-4 " style="font-weight: 300;" >
+            You can cancel your Prime membership at any time by clicking on “Manage my membership” [https://www.amazon.eg/prime]. You will not receive a refund for the months during which your membership was active, but you will not be charged for your next scheduled billing.
+        </h2>
+        </div>
+        <div class="div w-100" style="height: 3px; background-color:rgb(26, 152, 255) ;"></div>
+
+        <button class="btn d-flex w-100 justify-content-between " type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapseExample">
+            <h3>                                          What if I already have an Amazon Prime Video subscription?</h3>
+            <h3>+</h3>
+          </button>
+        <div class="collapse" id="collapse6">
+          <h2 class="p-4 " style="font-weight: 300;" >
+            Prime Video is included in Amazon Prime. If you are already a Prime Video subscriber in Egypt, you can cancel your Prime Video subscription and sign up for Prime on Amazon.eg and get 30 days free trial. Otherwise, you will be automatically migrated at the end of your billing cycle.
+        </h2>
+        </div>
+        <div class="div w-100" style="height: 3px; background-color:rgb(26, 152, 255) ;"></div>
+
+
+
+       </div>
+    
+
+      <!-- footer -->
+  <div class="container-fluid m-0 p-0">
+    <section class="section_container">
+      <div class="container-fluid back-top btn cursor-pointer p-3 mt-1 text-center text-light  ">
+        <a class="back-to-top text-decoration-none text-light " href="#">Back to top</a>
+      </div>
+    </section>
+    <!-- First Footer -->
+    <footer class="first-footer-sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Get to Know Us</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Careers</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Blog</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">About Amazon</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Investor Relations</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Devices</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Tours</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Make Money with Us</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Sell products on Amazon</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Sell apps on Amazon</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Become an Affiliate</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Advertise Your Products</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Self-Publish with Us</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Host an Amazon Hub</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">See More Make Money with Us</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Amazon Payment Products</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Business Card</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Shop with Points</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Reload Your Balance</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Currency Converter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <p class="footer-column  text-light">Let Us Help You</p>
+            <ul class="footer-ul p-0">
+              <li class="footer-li"><a class="footer-link" href="#">Amazon and COVID-19</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Your Account</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Your Orders</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Shipping Rates & Policies</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Returns & Replacements</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Manage Your Content and Devices</a>
+              </li>
+              <li class="footer-li"><a class="footer-link" href="#">Amazon Assistant</a></li>
+              <li class="footer-li"><a class="footer-link" href="#">Help</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-line">
+      </div>
+      <div class="container amazon-footer-logo-area p-4">
+        <div class="row pt-2 pb-2 justify-content-center text-center">
+          <div class="col-md-5 footer-lg-img">
+            <img src="../img/image20.png" alt="amazon logo">
+          </div>
+          <div class="col-md-7 icons d-flex gap-2 text-center ">
+            <div class="border btn m-0 p-0">
+              <p class="english btn text-light">English</p>
+            </div>
+            <div class="border btn m-0 p-0">
+              <p class="btn m-0 p-0  text-light">$ USD - U.S. Dollar</p>
+            </div>
+            <div class="border btn m-0 p-0 ">
+              <div class="d-flex text-center p-0">
+                <img class="p-1" src="../img/us.png" alt="USA LOGO" width="30rem" height="20rem">
+                <p class="text-light text-center">United States</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Second Foot… -->
+    <footer class="second-footer-sec pt-5 pb-5">
+      <div class="container text-decoration-none">
+        <div class="row">
+          <div class="col">
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Music</span><br>
+                <span class="second-title-footer">Stream millions <br> of songs</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Alexa</span><br>
+                <span class="second-title-footer">Actionable Analytics <br> for the Web</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Rapids</span><br>
+                <span class="second-title-footer">Fun stories for <br> kids on the go</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">CreateSpace</span><br>
+                <span class="second-title-footer">Indie Print Publishing <br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">IMDbPro</span><br>
+                <span class="second-title-footer">Get Info Entertainment <br> Professionals Need</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Ring</span><br>
+                <span class="second-title-footer">Smart Home <br> Security Systems</span>
+              </a>
+            </div>
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Advertising</span><br>
+                <span class="second-title-footer">Find, attract, and <br> engage customers</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Sell on Amazon</span><br>
+                <span class="second-title-footer">Start a Selling <br> Account</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Web Services</span><br>
+                <span class="second-title-footer">Scalable Cloud <br> Computing Services</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">DPReview</span><br>
+                <span class="second-title-footer">Digital <br> Photography</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Kindle Direct Publishing</span><br>
+                <span class="second-title-footer">Indie Digital Publishing <br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">eero WiFi</span><br>
+                <span class="second-title-footer">Stream 4K Video<br> in Every Room</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4 text-left">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Drive</span><br>
+                <span class="second-title-footer">Cloud storage <br> from Amazon</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4 text-light">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Business</span><br>
+                <span class="second-title-footer">Everything For<br> Your Business</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Audible</span><br>
+                <span class="second-title-footer">Listen to Books & Original<br> Audio
+                  Performances</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">East Dane</span><br>
+                <span class="second-title-footer">Designer Men's<br> Fashion</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Prime Video Direct</span><br>
+                <span class="second-title-footer">Video Distribution<br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Neighbors App </span><br>
+                <span class="second-title-footer">Real-Time Crime<br> & Safety Alerts</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">6pm</span><br>
+                <span class="second-title-footer">Score deals<br> on fashion brands</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">AmazonGlobal</span><br>
+                <span class="second-title-footer">Ship Orders<br> Internationally</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Book Depository</span><br>
+                <span class="second-title-footer">Books With Free<br> Delivery Worldwide</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Fabric</span><br>
+                <span class="second-title-footer">Sewing, Quilting<br> & Knitting</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Shopbop</span><br>
+                <span class="second-title-footer">Designer<br> Fashion Brands</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Subscription Boxes</span><br>
+                <span class="second-title-footer">Top subscription boxes – right to your door</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">AbeBooks</span><br>
+                <span class="second-title-footer">Books, art<br> & collectibles</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Home Services</span><br>
+                <span class="second-title-footer">Experienced Pros<br> Happiness Guarantee</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Box Office Mojo</span><br>
+                <span class="second-title-footer">Find Movie<br> Box Office Data</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Goodreads</span><br>
+                <span class="second-title-footer">Book reviews<br> & recommendations</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Woot!</span><br>
+                <span class="second-title-footer">Deals and <br> Shenanigans</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">PillPack</span><br>
+                <span class="second-title-footer">Pharmacy Simplified</span>
+              </a>
+            </div>
+
+          </div>
+          <div class="col">
+
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">ACX </span><br>
+                <span class="second-title-footer">Audiobook Publishing<br> Made Easy</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Ignite</span><br>
+                <span class="second-title-footer">Sell your original<br> Digital Educational</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">ComiXology</span><br>
+                <span class="second-title-footer">Thousands of<br> Digital Comics</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">IMDb</span><br>
+                <span class="second-title-footer">Movies, TV<br> & Celebrities</span>
+              </a>
+            </div>
+            <div class="footer-section-column mb-4">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Zappos</span><br>
+                <span class="second-title-footer">Shoes &<br> Clothing</span>
+              </a>
+            </div>
+            <div class="footer-section-column">
+              <a href="#" class="second-footer-link">
+                <span class="first-title-footer">Amazon Second Chance</span><br>
+                <span class="second-title-footer">Pass it on, trade it in,<br> give it a second
+                  life</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+      <script>
+             let mybutton = document.getElementById("btn-back-to-top");
+             window.onscroll = function () {scrollFunction(); };function scrollFunction() {if (document.body.scrollTop > 20 ||
+             document.documentElement.scrollTop > 20) { mybutton.style.display = "block";} else { mybutton.style.display = "none"; }}
+             mybutton.addEventListener("click", backToTop);
+             function backToTop() { document.body.scrollTop = 0; document.documentElement.scrollTop = 0;}
+
+             let back =document.getElementById("back")
+             let next =document.getElementById("next")
+             let cards=document.getElementsByClassName("ccard")
+             let cards_container=document.getElementById("cards")
+             let cardsarr=[...cards]
+             back.addEventListener("click",function () {
+                cardlast=cardsarr.pop()
+                cardsarr.unshift(cardlast)
+                cards_container.appendChild(cardsarr[1]) ;
+                cards_container.appendChild(cardsarr[2]) ;
+                cards_container.appendChild(cardsarr[3]) ;
+
+                console.log(cardsarr);
+             })
+             next.addEventListener("click",function () {
+                card1=cardsarr.shift()
+                cardsarr.push(card1)
+                cards_container.appendChild(cardsarr[1]) ;
+                cards_container.appendChild(cardsarr[2]) ;
+                cards_container.appendChild(cardsarr[3]) ;
+
+                console.log(cardsarr);
+             })
+
+      </script>
+    <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
