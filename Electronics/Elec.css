@@ -43,6 +43,9 @@ border: 0;
 .carousel-inner {
   display: flex;
 }
+.sideLeft{
+  display: none;
+}
 }
 
 .sideLeft{
@@ -98,6 +101,9 @@ display: none;
 }
 @media screen and (max-width:802px) {
   .nav-two {
+    display: none;
+  }
+  .third-nav{
     display: none;
   }
  
