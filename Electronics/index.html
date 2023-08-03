@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/all.min.css"/>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="Elec.css">
+  <!-- <link rel="stylesheet" href="../css/TodaysDeals.css"> -->
+  <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+  <script src="../js/bootstrap.bundle.min.js" defer></script>
+</head>
+
+<body>
+  <div class="container-fluid topNavBar">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pt-1">
+      <div class="container-fluid">
+        <a class="navbar-brand nav-page me-0 col-lg-1 col-6" href="../index.html">
+          <img class="col-12 logo-image" src="../img/amazon-logo.svg" alt="Amazon-Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse col-11" id="navbarSupportedContent">
+          <ul class="navbar-nav m-0 d-flex align-items-center col-12">
+            <li class="nav-item nav-page ">
+              <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                <span class="ms-3 text-secondary small">Hello</span>
+                <span><i class="fa-solid fa-location-dot"></i> Select Your Address</span>
+              </a>
+            </li>
+            <li class="nav-item col-7">
+              <div class="input-group mt-3 mb-3">
+                <button type="button" class="btn dropdown-toggle seachBar-dropDown" data-bs-toggle="dropdown">
+                  all
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Link 1</a></li>
+                  <li><a class="dropdown-item" href="#">Link 2</a></li>
+                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+                </ul>
+                <input type="text" class="form-control" placeholder="search amazon.eg">
+                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </li>
+            <li class="nav-item col-3">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between col-12">
+                <div class="nav-item col-3 nav-page d-flex align-items-center">
+                  <div class="dropdown">
+                    <a class="nav-link dropdown-toggle text-bg-dark pic-lang" href="#" role="button"
+                      id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="Lang-Flags text-bg-dark" src="../img/usa.svg" alt="us">
+                      English
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="../img/egypt.svg" alt="egypt">
+                          Arabic</a></li>
+                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="../img/france.svg" alt="france">
+                          French</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <li class="nav-item col-4 nav-page">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                    <span class="text-secondary small" id="userName">Hello sign In</span>
+                    <span>Account&lists </span>
+                  </a>
+                </li>
+                <li class="nav-item col-2 nav-page">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                    <span class="mt-4">Orders</span>
+                  </a>
+                </li>
+                <li class="nav-item col-2 nav-page">
+                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
+                    <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="50"
+                      fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                      <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+                      <circle cx="25" cy="27" r="2" />
+                      <circle cx="12" cy="27" r="2" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar row nav-two">
+      <div class="container-fluid d-flex flex-row" style="box-sizing: border-box;">
+        <div class="navbar d-flex">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row" style="box-sizing: border-box;">
+            <button class="p-0 btn navbar-brand secondNavItem" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                class="fa-solid fa-bars"></i> all</button>
+
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" aria-current="page" href="#">Todays Deals</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle secondNavItem" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Prime
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Mobile Phones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Appliances</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Fashion</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">video Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Toys & Game</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">grocery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Perfumes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Your amazon.eg</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Coupons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link secondNavItem" href="#">sell</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+    aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <p>Try scrolling the rest of the page to see this option in action.</p>
+    </div>
+  </div>
+  <div class="row container-fluid">
+    <ul class="nav shadow-sm third-nav">
+      <li class="nav-item">
+        <a class="nav-link text-dark fw-bolder" href="#">Today's Deals</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Coupons</a>
+      </li>
+    </ul>
+    <!-- <div class=""></div> -->
+  <div class="col-2 mt-2 sideLeft"> 
+    <div class="col">
+      <p class="h6 fw-bold">Eligible for free delivery</p>
+
+      <li class="list-group-item">
+        <input class="form-check-input me-1" type="checkbox" value="" id="f1" />Free Shipping
+        <label class="form-check-label stretched-link w-100" for="f1">
+          All customers get FREE Shipping on orders shipped by Amazon</label>
+      </li>
+    </div>
+
+    <ul class="list-group side">
+      <br>
+      <h5 class=" fw-bold">Category</h5>
+      <h6 class="px-2 fw-bold">Electronics</h6>
+      <div class="px-3">
+        <label><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Camera & Photo</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Car & Vehicle Electronics</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Computers, Components & Accessories</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>eBook Readers & Accessories </label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Headphones, Earbuds & Accessories</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Hi-Fi & Home Audio</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Home Theater, TV & Video</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Household Batteries & Chargers</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Mobile Phones & Communication</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Portable Sound & Vision</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Power Accessories</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Sat Nav, GPS, Navigation & Accessories</p>
+        <label><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Tablets</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Telephones, VoIP & Accessories</label>
+        <label class="mt-2"><a class="link-offset-2 link-underline link-underline-opacity-0" href="#"></a>Wearable Technology</label>
+      </div>
+      <div>
+        <h6 class="mt-4 fw-bold">Fulfilled by Amazon</p>
+        <span>
+          <input class="form-check-input me-0" type="checkbox" value="" id="g1" />
+          Fulfilled by Amazon<label class="form-check-label stretched-link w-100" for="g1"></label>
+        </span>
+      </div>
+      <div>
+        <p class="h6 fw-bold">Brand</p>
+        <span>
+          <input class="form-check-input my-0 me-0" type="checkbox" value="" id="y5" />
+          Other<label class="form-check-label stretched-link w-100 " for="y5"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="y6" />
+          SAMSUNG<label class="form-check-label stretched-link w-100 " for="y6"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="y7" />
+          HP<label class="form-check-label stretched-link w-100 " for="y7"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="y8" />
+          Baseus<label class="form-check-label stretched-link w-100 " for="y8"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="y9" />
+          Dell<label class="form-check-label stretched-link w-100 " for="y9"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="y10" />
+          Spigen<label class="form-check-label stretched-link w-100 " for="y10"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="y11" />
+          JBL<label class="form-check-label stretched-link w-100 " for="y11"></label>
+        </span>
+      </div>
+      <div>
+        <p class="h6 fw-bold">Condition</p>
+        <span>
+          <label class="form-check-label stretched-link w-100 " for="g1">New</label>
+          <label class="form-check-label stretched-link w-100 " for="g2">Used</label>
+        </span>
+      </div>
+       <div>
+        <h6 class="mt-4">Avg. Customer Review</h6>
+        <div class="d-inline-block">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i> Only
+        </div>
+        <div class="d-inline-block">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>& up
+        </div>
+         <div class="d-inline-block">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>& Up
+        </div>
+         <div class="d-inline-block">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>
+         <i class="fa-regular fa-star text-warning"></i>& Up
+        </div>
+         <div class="d-inline-block">
+          <i class="fa-solid fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>      
+          <i class="fa-regular fa-star text-warning"></i>
+          <i class="fa-regular fa-star text-warning"></i>  
+          <i class="fa-regular fa-star text-warning"></i>& up
+        </div>
+      </div>
+      <div>
+        <h6 class="mt-4">Price</h6>
+        <ul style="list-style: none; padding-left: 0rem;">
+          <li><a href="#" style="text-decoration: none; color: black;">Up to 50 EGP</a></li>
+          <li><a href="#" style="text-decoration: none; color: black;">50 to 100 EGP</a></li>
+          <li><a href="#" style="text-decoration: none; color: black;">100 to 300 EGP</a></li>
+          <li><a href="#" style="text-decoration: none; color: black;">700 to 1500 EGP</a></li>
+          <li><a href="#" style="text-decoration: none; color: black;">1500 to 2500 EGP</a></li>
+          <li><a href="#" style="text-decoration: none; color: black;">2500 EGP & above</a></li>
+        </ul>
+        </div>
+        <div>
+          <h6 class="mt-4">Deals & Discounts</h6>
+          <span>
+            <label class="form-check-label stretched-link w-100 " for="g1">All Discounts</label>
+            <label class="form-check-label stretched-link w-100 " for="g2">Today's Deals</label>
+          </span>
+        </div>
+
+      <div>
+        <h6 class="mt-4">Seller</h6>
+        <span>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t8" />
+          Amazon.eg<label class="form-check-label stretched-link w-100 " for="t8"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t9" />
+          دلع.موبايلك<label class="form-check-label stretched-link w-100 " for="t9"></label>
+          <!-- <input class="form-check-input me-0" type="checkbox" value="" id="t10" />
+          المعز.ستور <label class="form-check-label stretched-link w-100 " for="t10"></label> -->
+          <input class="form-check-input me-0" type="checkbox" value="" id="t11" />
+          High.Quality<label class="form-check-label stretched-link w-100 " for="t11"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t12" />
+          Classy Phone<label class="form-check-label stretched-link w-100 " for="t12"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t13" />
+          Amazon Warehouse<label class="form-check-label stretched-link w-100 " for="t13"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t14" />
+          GOMAA STORE<label class="form-check-label stretched-link w-100 " for="t14"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t" />
+          Snap-Buy<label class="form-check-label stretched-link w-100 " for="t"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="tk" />
+          Fekra.Store-DT<label class="form-check-label stretched-link w-100 " for="tk"></label>
+          <input class="form-check-input me-0" type="checkbox" value="" id="tp" />
+          M.H.M E.Commerce<label class="form-check-label stretched-link w-100 " for="tp"></label>
+        </span>
+      </div>
+      <div>
+        <h6 class="mt-3">Availability</h6>
+        <span>
+          <input class="form-check-input me-0" type="checkbox" value="" id="t8" />
+          Include Out of Stock<label class="form-check-label stretched-link w-100 " for="t8"></label>
+      </div>
+     
+<br>
+
+
+    </ul>
+</div>
+  <div class="col-10 sideRight">
+  <div class="container">
+    <div class="row">
+      <h1>Electronics</h1>
+      <!-- <img src="./Sources/5.PNG" class="img-fluid" alt="..."> -->
+      <img src="./Sources/XCM_.jpg" class="img-fluid" alt="...">
+      <!-- <img src="./Sources/6.PNG" class=" mt-3 img-fluid" alt="..."> -->
+      <h2 class="mt-4">Popsockets | Up to 40% off</h2><hr>
+      <div id="carouselExampleControls" class="carousel" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card" style="width:  13rem;">
+              <img src="./Sources/1=.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text fw-bolder">
+                  POpsockets popgrip - expanding stand an...
+                  </p>
+                <p>POpsockets</p>
+                <div class="d-flex">EGP<sub><h3>322</h3></sub>00 
+                 </div>
+                <div class="d-inline-block">
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star text-warning"></i>
+                  <i class="fa-solid fa-star-half-stroke text-warning"></i>(2,703)
+               </div>     
+                      
+                    
+                    </div>
+                  </div>
+        </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/2=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder"> POpsockets popgrip - expanding stand an...
+                  </p>
+                  <p>POpsockets</p>
+                  <div class="d-flex">EGP<sub><h3>239</h3></sub>00       
+                   </div>
+                  <div class="d-inline-block">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>(980)
+                 </div>     
+                        
+                      
+                      </div>
+                    </div>
+                    
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/3=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an...</p>
+                  <P>POpsockets</P>
+                  <div class="d-flex">EGP<sub><h3>239</h3></sub>00 
+                  </div>
+                  <div class="d-inline-block">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>(1,917)
+                 </div>     
+                       
+                      
+                      </div>
+                    </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/4=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an...
+                    </p>
+                  <p>POpsockets</p>
+                  <div class="d-flex">EGP<sub><h3>239</h3></sub>00 
+                  </div> 
+                  <div class="d-inline-block">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>(584)
+                 </div>     
+                      </div>
+                    </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/5=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an...
+                    </p>
+                  <p>POpsockets</p>
+                  <div class="d-flex">EGP<sub><h3>239</h3></sub>00 
+                  </div> 
+                  <div class="d-inline-block">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-regular fa-star text-warning"></i>(582)
+                 </div>     
+                      
+                      </div>
+                    </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/6=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an...</p>
+                  <p>POpsockets</p>
+                  <div class="d-flex">EGP<sub><h3>322</h3></sub>00 
+                   </div>
+                     
+                      </div>
+                    </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/7=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an...
+                     </p>
+                  <p>POpsockets</p>
+                  <div class="d-flex">EGP<sub><h3>239</h3></sub>00 
+                   </div>
+                  <div class="d-inline-block">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-regular fa-star text-warning"></i>(631)
+                 </div>     
+                        
+                      
+                      </div>
+                    </div>
+            </div>
+            
+              <div class="carousel-item">
+                <div class="card" style="width:  13rem;">
+                  <img src="./Sources/8=.PNG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an...</p>
+                    <p>POpsockets</p>
+                    <div class="d-flex">EGP<sub><h3>233</h3></sub>00 
+                     </div>
+                    <div class="d-inline-block">
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-solid fa-star text-warning"></i>
+                      <i class="fa-regular fa-star text-warning"></i>(428)
+                   </div>     
+                          
+                        
+                        </div>
+                      </div>
+              </div>
+            <div class="carousel-item">
+              <div class="card" style="width:  13rem;">
+                <img src="./Sources/9=.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text fw-bolder">POpsockets popgrip - expanding stand an... </p>
+                  <p>POpsockets</p>
+                  <div class="d-flex">EGP<sub><h3>227</h3></sub>80 
+                   </div>
+                  <div class="d-inline-block">
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star text-warning"></i>
+                    <i class="fa-solid fa-star-half-stroke text-warning"></i>(1,105)
+                 </div>     
+                        
+                      
+                      </div>
+                    </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="prev">
+          <i class="rounded-2 p-2 fa-solid fa-angle-left shadow"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="next">
+          <i class="rounded-2 p-2 shadow fa-solid fa-angle-right"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <img class="mt-2" src="./Sources/7.PNG" class="img-fluid" alt="...">
+      <hr class="mt-2">
+      <h3 class="mt-4 text-center">SHOP BY CATEGORY</h1>
+        <div class="mt-3">
+          <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-3">
+            <div class="col">
+              <div class="card border-0">
+                <img src="./Sources/11.PNG" class="card-img-top">
+                <div class="card-body">
+                  <h6 class="card-text text-center">Mobile & accessories</h>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="./Sources/22.PNG" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-text text-center">TVs</h>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="./Sources/33.PNG" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-text text-center">Headphones</h>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="./Sources/44.PNG" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-text text-center">Laptops</h>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="./Sources/55.PNG" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-text text-center">PCs & accessories</h>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card border-0">
+                <img src="./Sources/66.PNG" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-text text-center">Speakers</h>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <img src="./Sources/8.PNG" class="mt-3 img-fluid">
+        <h3 class="mt-4 text-center">FEATURED BRANDS</h1>
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-3">
+        <div class="col">
+          <div class="card  border-0" style="width: 19rem;">
+            <img src="./Sources/88.PNG" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text text-center">Joyroom</h4>
+            </div>
+          </div></div>
+          <div class="col">
+          <div class="card  border-0" style="width: 19rem;">
+            <img src="./Sources/77.PNG" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text text-center">XO</h4>
+            </div>
+          </div></div>
+          <div class="col">
+          <div class="card  border-0" style="width: 19rem;">
+            <img src="./Sources/99.PNG" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text text-center">Remax</h4>
+            </div>
+          </div></div>
+          <div class="col">
+          <div class="card  border-0" style="width: 19rem;">
+            <img src="./Sources/12.PNG" class="card-img-top">
+            <div class="card-body">
+              <h3 class="card-text text-center">Aspor</h4>
+            </div>
+          </div></div>
+        </div>
+        <img src="./Sources/9.PNG" class="mt-4 img-fluid"><hr class="mt-3">
+<h2>Electronics | New arrivals</h2><hr>
+<div id="carouselExampleControls1" class="carousel" data-bs-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card" style="width:  13rem;">
+        <img src="./Sources/Capture0.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">
+            Soundcore By Anker R50i True Wireless…</p>
+          <p>Soundcore</p>
+          <div class="d-flex">EGP<sub><h3>1,109</h3></sub>00 
+           </div>
+           <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP1,399.00</span>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>(57)
+         </div>     
+                
+              
+              </div>
+            </div>
+  </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture1.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Oraimo Smart watch OSW-16, BrightSilv…</p>
+            <p>oriaimo</p>
+            <div class="d-flex">EGP<sub><h3>888</h3></sub>00 
+             </div>
+              <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP1,560.40</span>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(9)
+           </div>     
+                  
+                
+                </div>
+              </div>
+              
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture2.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">QUANXI M10 Wireless Bluetooth 5.1 Head… </p>
+            <P>XFTOPSEXFTOPSE</P>
+            <div class="d-flex">EGP<sub><h3>278</h3></sub>00 
+            </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(108)
+           </div>     
+                 
+                
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture3.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Portable Desk Fan with Night Light, 3… MOREKAMOREKA</p>
+            <p>MOREKA</p>
+            <div class="d-flex">EGP<sub><h3>599</h3></sub>00 
+            </div> 
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(10)
+           </div>     
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture4.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Reioo 3M Original AirPods 3 Sm Original</p>
+            <p>Reioo</p>
+            <div class="d-flex">EGP<sub><h3>540</h3></sub>00 
+            </div> 
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(7)
+           </div>     
+                
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture6.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">HD Plus Glass Anti Shock with Black Fr… </p>
+            <p>GenericGeneric</p>
+            <div class="d-flex">EGP<sub><h3>48</h3></sub>07 
+               <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP65.00</span>
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(8)
+           </div>     
+                  
+                
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture7.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Camelion Super Heavy Duty Batteri… </p>
+            <p>GenericGeneric</p>
+            <div class="d-flex">EGP<sub><h3>45</h3></sub>07 
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(3)
+           </div>     
+                  
+                
+                </div>
+              </div>
+      </div>
+      
+        <div class="carousel-item">
+          <div class="card" style="width:  13rem;">
+            <img src="./Sources/Capture8.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bolder">LENOK 33W USB C Wall Charger GaN </p>
+              <p>LENOK</p>
+              <div class="d-flex">EGP<sub><h3>399</h3></sub>99 
+                 <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP65.00</span>
+               </div>
+              <div class="d-inline-block">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star text-warning"></i>
+             </div>     
+                    
+                  
+                  </div>
+                </div>
+        </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/Capture9.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Zubitech Samsung Galaxy A24 5G Clear </p>
+            <p>Zubitech</p>
+            <div class="d-flex">EGP<sub><h3>100</h3></sub>99 
+               <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP65.00</span>
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(3)
+           </div>     
+                  
+                
+                </div>
+              </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="prev">
+    <i class="rounded-2 p-2 fa-solid fa-angle-left shadow"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="next">
+    <i class="rounded-2 p-2 shadow fa-solid fa-angle-right"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<h2 class="mt-4">Electronics | Best Sellers</h2><hr>
+<div id="carouselExampleControls" class="carousel" data-bs-ride="false">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card" style="width:  13rem;">
+        <img src="./Sources/111.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">
+            Adjustable Laptop Stand, Portable Alumini...
+            </p>
+          <p>MONADIKOS</p>
+          <div class="d-flex">EGP<sub><h3>125</h3></sub>00 
+            <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP130.00</span>
+           </div>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>(2,494)
+         </div>     
+                
+              
+              </div>
+            </div>
+  </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/222.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Joyroom JR-BP560 Excellent Series Por…</p>
+            <p>Joyroom</p>
+            <div class="d-flex">EGP<sub><h3>215</h3></sub>00 
+              <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP309.43</span>
+
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(130)
+           </div>     
+                  
+                
+                </div>
+              </div>
+              
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/333.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Hikvision 64 GB USB Flash Drive - HS-US… </p>
+            <P>Hikvision</P>
+            <div class="d-flex">EGP<sub><h3>92</h3></sub>00 
+              <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP111.49</span>
+            </div>
+            
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(10,917)
+           </div>     
+                 
+                
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/444.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">iLOCK Travel Plug adapter Converter -…
+              </p>
+            <p>iLOCK</p>
+            <div class="d-flex">EGP<sub><h3>31</h3></sub>00 
+              <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP48.00</span>
+            </div> 
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(375)
+           </div>     
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/555.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Gp chargeable batteries - 1100 ma…
+              </p>
+            <p>GP</p>
+            <div class="d-flex">EGP<sub><h3>43</h3></sub>00 
+              <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP104.15</span>
+            </div> 
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(116)
+           </div>     
+                
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/666.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">8.5 Inch digital drawing Tablet han… </p>
+            <p>Newlight</p>
+            <div class="d-flex">EGP<sub><h3>60</h3></sub>00 
+               <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP71.90</span>
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(283)
+           </div>     
+                  
+                
+                </div>
+              </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/777.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">iLock 3-way wall outlet adapter 350…
+               </p>
+            <p>iLOCK</p>
+            <div class="d-flex">EGP<sub><h3>33</h3></sub>00 
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(631)
+           </div>     
+                  
+                
+                </div>
+              </div>
+      </div>
+      
+        <div class="carousel-item">
+          <div class="card" style="width:  13rem;">
+            <img src="./Sources/888.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text fw-bolder">LG LED Smart TV 43 inch LM6370 Series Full HD HDR Smart LED TV - 43LM6370PVA </p>
+              <p>LG</p>
+              <div class="d-flex">EGP<sub><h3>8,666</h3></sub>00 
+                 <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP8,999</span>
+               </div>
+              <div class="d-inline-block">
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-solid fa-star text-warning"></i>
+                <i class="fa-regular fa-star text-warning"></i>(128)
+             </div>     
+                    
+                  
+                  </div>
+                </div>
+        </div>
+      <div class="carousel-item">
+        <div class="card" style="width:  13rem;">
+          <img src="./Sources/999.PNG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text fw-bolder">Kingston 64GB Exodia USB 3.20 Flash - DTX/64GB </p>
+            <p>Kingston</p>
+            <div class="d-flex">EGP<sub><h3>127</h3></sub>80 
+               <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP234.00</span>
+             </div>
+            <div class="d-inline-block">
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-solid fa-star text-warning"></i>
+              <i class="fa-regular fa-star text-warning"></i>(34,105)
+           </div>     
+                  
+                
+                </div>
+              </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="prev">
+    <i class="rounded-2 p-2 fa-solid fa-angle-left shadow"></i>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#TodayDealsCarousel" data-bs-slide="next">
+    <i class="rounded-2 p-2 shadow fa-solid fa-angle-right"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="card mt-4">
+  <div class="card-body">
+    <p class="fw-normal">1-12 of over 70,000 results for <span class="text-danger fw-bold">Electronics</span></p>
+  </div>
+  </div>
+  </div>		
+</div>
+   
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mt-4 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/best.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="text-center">
+            <input type="radio" style="width: 25px; height: 25px; accent-color: black;" checked>
+            <input type="radio" style="width: 25px; height: 25px; accent-color: rgb(88, 65, 65)" checked>
+            <input type="radio" style="width: 25px; height: 25px; accent-color: rgb(159, 159, 159);" checked>
+          </div>
+          <p class="card-text fw-bolder">SAMSUNG Galaxy A04 Dual SIM Smartphone- 3GB RAM, 32GB Storage, LTE, Black - 1 year Warranty</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>31
+          </div>     
+               <div class="d-flex">EGP<sub><h3>3,199</h3></sub>00 
+                <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP4,919.00</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Jul 31</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+          
+
+             
+            </div>
+      </div>
+    
+
+    <div class="col-md-4 mt-4 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/1.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="text-center">
+            <input type="radio" style="width: 25px; height: 25px; accent-color: black;" checked>
+            <input type="radio" style="width: 25px; height: 25px; accent-color: rgb(201, 201, 208)" checked>
+          </div>
+          <p class="card-text fw-bolder">SAMSUNG Galaxy A04 Dual SIM Smartphone- 4GB RAM, 64GB Storage, LTE, Black - 1 year Warranty</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>12
+          </div>     
+               <div class="d-flex">EGP<sub><h3>3,699</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP5,639.00</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Jul 31</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+          
+
+             
+            </div>
+    </div>
+
+    <div class="col-md-4 mt-4 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/3.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="text-center">
+            <input type="radio" style="width: 25px; height: 25px; accent-color: rgb(201, 201, 208)" checked>
+            <input type="radio" style="width: 25px; height: 25px; accent-color: black;" checked>
+          </div>
+          <p class="card-text fw-bolder">Samsung Galaxy A24 Dual SIM, 4GB RAM, 128GB ROM, 4G LTE - Silver</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>11
+         </div>     
+               <div class="d-flex">EGP<sub><h3>6,444</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP7,447.00</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Jul 31</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+    <div class="col-md-4 mt-2 d-flex">
+      <hr>
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/2.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">Samsung 50 inch 4k uhd smart led tv with built-in receiver and remote control, black - ua50cu7000uxeg</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>19
+         </div>     
+               <div class="d-flex">EGP<sub><h3>10,899</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGPl1,299.40</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Aug 1</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+
+    <div class="col-md-4 mt-2 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/r1.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">Oraimo Riff Smaller for Comfort True Wireless Earbuds, Black + 12 Months Local Warranty</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>
+         </div>21   
+         <span class="d-flex badge bg-danger"style="width:7rem;"> Limited time deal</span>
+               <div class="d-flex">EGP<sub><h3>599</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGPl,037.40</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Aug 1</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+
+    <div class="col-md-4 mt-2 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/2.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">Samsung 50 inch 4k uhd smart led tv with built-in receiver and remote control, black - ua50cu7000uxeg</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>25
+         </div>     
+               <div class="d-flex">EGP<sub><h3>10,899</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGPl1,299.40</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Aug 1</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+
+    <div class="col-md-4 mt-2 d-flex">
+      <hr>
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/11-.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="text-center">
+          <input type="radio" style="width: 25px; height: 25px; accent-color: black;" checked>
+          <input type="radio" style="width: 25px; height: 25px; accent-color: rgb(163, 163, 205)" checked>
+          <input type="radio" style="width: 25px; height: 25px; accent-color: rgb(118, 86, 86);" checked>
+        </div>
+          <p class="card-text fw-bolder">Samsung Galaxy A04e Dual SIM Smartphone - 3GB RAM, 64GB Storage, LTE, Black - 1 year Warranty</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>21
+         </div>     
+               <div class="d-flex">EGP<sub><h3>3,399</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP4,9690</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Aug 3</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+
+    <div class="col-md-4 mt-2 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/22-.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">Soundcore a3991h11 by anker life p2i true wireless earbuds, ai-enhanced calls, 10mm drivers, 2 eq modes, 28h playtime with fast charging, bluetooth</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star-half-stroke text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>131
+         </div>  
+               <div class="d-flex">EGP<sub><h3>1,089</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP1,540,01</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Aug 4</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+
+    <div class="col-md-4 mt-2 d-flex">
+      <div class="card" style="width:  22rem;">
+        <img src="./Sources/33-.PNG" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text fw-bolder">Redmi 12 Dual SIM, 4GB RAM, 128GB ROM - Midnight Black</p>
+          <div class="d-inline-block">
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-solid fa-star text-warning"></i>
+            <i class="fa-regular fa-star text-warning"></i>4
+         </div>     
+               <div class="d-flex">EGP<sub><h3>5,999</h3></sub>00 
+               <span class="pt-3 me-2">List: <span class="text-muted pt-3 text-decoration-line-through me-2"> EGP11,299.40</span></span> 
+              </div> 
+              <div class="d-flex align-items-start me-3">
+                <img src="./Sources/a.PNG" style="width:50px"><h6>Get it as soon as tomorrow, Aug 4</h> 
+                </div>
+                <h6>Fulfilled by Amazon - FREE Shipping</h6>
+              </div>
+            </div>
+    </div>
+
+  </div>
+  <div class="d-grid gap-2">
+    <button class="btn mt-4 mb-5" style="background-color: #ebeaea; color: rgb(62, 110, 130);" type="button"><h5>See all results</h5></button></div>
+</div></div>
+</div>
+
+<div class="container-fluid m-0 p-0">
+  <section class="section_container">
+    <div class="container-fluid back-top btn cursor-pointer p-3 mt-1 text-center text-light  ">
+      <a class="back-to-top text-decoration-none text-light " href="#">Back to top</a>
+    </div>
+  </section>
+  <!-- First Footer -->
+  <footer class="first-footer-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p class="footer-column  text-light">Get to Know Us</p>
+          <ul class="footer-ul p-0">
+            <li class="footer-li"><a class="footer-link" href="#">Careers</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Blog</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">About Amazon</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Investor Relations</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Amazon Devices</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Amazon Tours</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="footer-column  text-light">Make Money with Us</p>
+          <ul class="footer-ul p-0">
+            <li class="footer-li"><a class="footer-link" href="#">Sell products on Amazon</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Sell apps on Amazon</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Become an Affiliate</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Advertise Your Products</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Self-Publish with Us</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Host an Amazon Hub</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">See More Make Money with Us</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="footer-column  text-light">Amazon Payment Products</p>
+          <ul class="footer-ul p-0">
+            <li class="footer-li"><a class="footer-link" href="#">Amazon Business Card</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Shop with Points</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Reload Your Balance</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Amazon Currency Converter</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <p class="footer-column  text-light">Let Us Help You</p>
+          <ul class="footer-ul p-0">
+            <li class="footer-li"><a class="footer-link" href="#">Amazon and COVID-19</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Your Account</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Your Orders</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Shipping Rates & Policies</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Returns & Replacements</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Manage Your Content and Devices</a>
+            </li>
+            <li class="footer-li"><a class="footer-link" href="#">Amazon Assistant</a></li>
+            <li class="footer-li"><a class="footer-link" href="#">Help</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-line">
+    </div>
+    <div class="container amazon-footer-logo-area p-4">
+      <div class="row pt-2 pb-2 justify-content-center text-center">
+        <div class="col-md-5 footer-lg-img">
+          <img src="../img/image20.png" alt="amazon logo">
+        </div>
+        <div class="col-md-7 icons d-flex gap-2 text-center ">
+          <div class="border btn m-0 p-0">
+            <p class="english btn text-light">English</p>
+          </div>
+          <div class="border btn m-0 p-0">
+            <p class="btn m-0 p-0  text-light">$ USD - U.S. Dollar</p>
+          </div>
+          <div class="border btn m-0 p-0 ">
+            <div class="d-flex text-center p-0">
+              <img class="p-1" src="../img/us.png" alt="USA LOGO" width="30rem" height="20rem">
+              <p class="text-light text-center">United States</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Second Foot… -->
+  <footer class="second-footer-sec pt-5 pb-5">
+    <div class="container text-decoration-none">
+      <div class="row">
+        <div class="col">
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Music</span><br>
+              <span class="second-title-footer">Stream millions <br> of songs</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Alexa</span><br>
+              <span class="second-title-footer">Actionable Analytics <br> for the Web</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Rapids</span><br>
+              <span class="second-title-footer">Fun stories for <br> kids on the go</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">CreateSpace</span><br>
+              <span class="second-title-footer">Indie Print Publishing <br> Made Easy</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">IMDbPro</span><br>
+              <span class="second-title-footer">Get Info Entertainment <br> Professionals Need</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Ring</span><br>
+              <span class="second-title-footer">Smart Home <br> Security Systems</span>
+            </a>
+          </div>
+        </div>
+        <div class="col">
+
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Advertising</span><br>
+              <span class="second-title-footer">Find, attract, and <br> engage customers</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Sell on Amazon</span><br>
+              <span class="second-title-footer">Start a Selling <br> Account</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Web Services</span><br>
+              <span class="second-title-footer">Scalable Cloud <br> Computing Services</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">DPReview</span><br>
+              <span class="second-title-footer">Digital <br> Photography</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Kindle Direct Publishing</span><br>
+              <span class="second-title-footer">Indie Digital Publishing <br> Made Easy</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">eero WiFi</span><br>
+              <span class="second-title-footer">Stream 4K Video<br> in Every Room</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+
+          <div class="footer-section-column mb-4 text-left">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Drive</span><br>
+              <span class="second-title-footer">Cloud storage <br> from Amazon</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4 text-light">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Business</span><br>
+              <span class="second-title-footer">Everything For<br> Your Business</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Audible</span><br>
+              <span class="second-title-footer">Listen to Books & Original<br> Audio
+                Performances</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">East Dane</span><br>
+              <span class="second-title-footer">Designer Men's<br> Fashion</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Prime Video Direct</span><br>
+              <span class="second-title-footer">Video Distribution<br> Made Easy</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Neighbors App </span><br>
+              <span class="second-title-footer">Real-Time Crime<br> & Safety Alerts</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">6pm</span><br>
+              <span class="second-title-footer">Score deals<br> on fashion brands</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">AmazonGlobal</span><br>
+              <span class="second-title-footer">Ship Orders<br> Internationally</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Book Depository</span><br>
+              <span class="second-title-footer">Books With Free<br> Delivery Worldwide</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Fabric</span><br>
+              <span class="second-title-footer">Sewing, Quilting<br> & Knitting</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Shopbop</span><br>
+              <span class="second-title-footer">Designer<br> Fashion Brands</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Subscription Boxes</span><br>
+              <span class="second-title-footer">Top subscription boxes – right to your door</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">AbeBooks</span><br>
+              <span class="second-title-footer">Books, art<br> & collectibles</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Home Services</span><br>
+              <span class="second-title-footer">Experienced Pros<br> Happiness Guarantee</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Box Office Mojo</span><br>
+              <span class="second-title-footer">Find Movie<br> Box Office Data</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Goodreads</span><br>
+              <span class="second-title-footer">Book reviews<br> & recommendations</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Woot!</span><br>
+              <span class="second-title-footer">Deals and <br> Shenanigans</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">PillPack</span><br>
+              <span class="second-title-footer">Pharmacy Simplified</span>
+            </a>
+          </div>
+
+        </div>
+        <div class="col">
+
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">ACX </span><br>
+              <span class="second-title-footer">Audiobook Publishing<br> Made Easy</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Ignite</span><br>
+              <span class="second-title-footer">Sell your original<br> Digital Educational</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">ComiXology</span><br>
+              <span class="second-title-footer">Thousands of<br> Digital Comics</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">IMDb</span><br>
+              <span class="second-title-footer">Movies, TV<br> & Celebrities</span>
+            </a>
+          </div>
+          <div class="footer-section-column mb-4">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Zappos</span><br>
+              <span class="second-title-footer">Shoes &<br> Clothing</span>
+            </a>
+          </div>
+          <div class="footer-section-column">
+            <a href="#" class="second-footer-link">
+              <span class="first-title-footer">Amazon Second Chance</span><br>
+              <span class="second-title-footer">Pass it on, trade it in,<br> give it a second
+                life</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+  <script>
+$('.carousel-control-next, .carousel-control-prev').on('click', function(){
+  var currentCarousel = $(this).closest('.carousel');
+  
+  var carouselWidth = currentCarousel.find('.carousel-inner')[0].scrollWidth;
+  var cardWidth = currentCarousel.find('.carousel-item').width();
+  
+  var scrollPosition = currentCarousel.find('.carousel-inner').scrollLeft();
+  
+  if ($(this).hasClass('carousel-control-next')) {
+    if (scrollPosition < (carouselWidth - (cardWidth * 4))) {
+      console.log('next');
+      scrollPosition = scrollPosition + cardWidth;
+      currentCarousel.find('.carousel-inner').animate({ scrollLeft:scrollPosition}, 600);
+    }
+  } else {
+    if (scrollPosition > 0) {
+      console.log('prev');
+      scrollPosition = scrollPosition - cardWidth;
+      currentCarousel.find('.carousel-inner').animate({ scrollLeft:scrollPosition}, 600);
+    }
+  }
+});
+
+  </script>
+</body>
+
+</html>
