@@ -16,154 +16,128 @@
 </head>
 
 <body>
-  <div class="container-fluid topNavBar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pt-1">
-      <div class="container-fluid">
-        <a class="navbar-brand nav-page me-0 col-lg-1 col-6" href="../index.html">
-          <img class="col-12 logo-image" src="../img/amazon-logo.svg" alt="Amazon-Logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse col-11" id="navbarSupportedContent">
-          <ul class="navbar-nav m-0 d-flex align-items-center col-12">
-            <li class="nav-item nav-page ">
-              <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                <span class="ms-3 text-secondary small">Hello</span>
-                <span><i class="fa-solid fa-location-dot"></i> Select Your Address</span>
-              </a>
-            </li>
-            <li class="nav-item col-7">
-              <div class="input-group mt-3 mb-3">
-                <button type="button" class="btn dropdown-toggle seachBar-dropDown" data-bs-toggle="dropdown">
-                  all
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link 1</a></li>
-                  <li><a class="dropdown-item" href="#">Link 2</a></li>
-                  <li><a class="dropdown-item" href="#">Link 3</a></li>
+  <div class="container-fluid topNavBar p-0" style="box-sizing: border-box;">
+    <div class="container-fluid p-2 bg-dark">
+      <div class="row m-0 align-items-center">
+        <div class="col-12 col-md-2 logo d-flex flex-wrap">
+          <a href="../index.html" class="p-0 d-flex justify-content-center align-items-center col-6"><img class="col-12 h-100" src="../img/images-removebg-preview.png" alt="logo"></a>
+          <div class="ps-3 col-6 d-flex align-items-center">
+            <div class=""><i class="fa-solid fa-location-dot icon-location text-white"></i></div>
+            <div class="text-white d-flex flex-column ps-2">
+              <span class="text-white-50 fs-6">Deliver to</span>
+              <span class="fw-bold fs-">EGYPT</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-6 py-2 py-md-0 pe-0">
+          <div class="search-container">
+            <select class="search-select ">
+              <option>All</option>
+            </select>
+            <input type="text" class="search-input " placeholder="Search Amazon for iti" />
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <ul class="list-unstyled  d-flex flex-wrap text-white align-items-center justify-content-evenly m-0">
+            <li class="col-2 justify-content-start m-0">
+              <div class="dropdown">
+                <a class="btn text-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="../img/egypt_round_icon_640.png" width="20px" alt="">
+                  EG
+                </a>
+                <ul class="dropdown-menu px-2 " aria-labelledby="dropdownMenuLink">
+                  <li class="py-2">
+                    <input type="radio" name="lang" id="ar">
+                    <img src="../img/ksa.png" width="19px" alt="">
+                    <label for="ar">Arabic</label>
+                  </li>
+                  <li class="py-2">
+                    <input type="radio" name="lang" id="en">
+                    <img src="../img/us.png" width="19px" alt="">
+                    <label for="en">English (US)</label>
+                  </li>
+                  <li class="py-2">
+                    <input type="radio" name="lang" id="fr">
+                    <img src="../img/fr.png" width="19px" alt="">
+                    <label for="fr">France</label>
+                  </li>
+
                 </ul>
-                <input type="text" class="form-control" placeholder="search amazon.eg">
-                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </li>
-            <li class="nav-item col-3">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between col-12">
-                <div class="nav-item col-3 nav-page d-flex align-items-center">
-                  <div class="dropdown">
-                    <a class="nav-link dropdown-toggle text-bg-dark pic-lang" href="#" role="button"
-                      id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img class="Lang-Flags text-bg-dark" src="../img/usa.svg" alt="us">
-                      English
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="../img/egypt.svg" alt="egypt">
-                          Arabic</a></li>
-                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="../img/france.svg" alt="france">
-                          French</a></li>
-                    </ul>
+            <li  class="col-5">
+              <div class="dropdown">
+                <a class="btn text-white dropdown-toggle text-start" href="#" role="button" id="dropdownMenuLink"
+                  data-bs-toggle="dropdown" aria-expanded="false">
+                  <span class="fw-normal">Hello,sign in</span> <br>
+                  <span class="fw-bolder">Account & Lists</span>
+                </a>
+
+                <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                  <button type="button" class="btn btn-warning text-center">Warning</button>
+                  <h2>dsfghjk</h2>
+                  <div class="d-flex w-600px">
+                    <div>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore maxime
+                        enim
+                        cum nam dolor, incidunt quis iure maiores, dolore impedit
+                        , hic sunt distinctio earum eaque officia perspiciatis tenetur
+                        perferendis
+                        porro.</p>
+                    </div>
+                    <div>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni nemo
+                        suscipit, quia dicta odio, ratione quos illum omnis quis hic la
+                        bore voluptatibus. Tempora expedita libero necessitatibus nesciunt quas
+                        minima.</p>
+                    </div>
                   </div>
                 </div>
-
-                <li class="nav-item col-4 nav-page">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                    <span class="text-secondary small" id="userName">Hello sign In</span>
-                    <span>Account&lists </span>
-                  </a>
-                </li>
-                <li class="nav-item col-2 nav-page">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                    <span class="mt-4">Orders</span>
-                  </a>
-                </li>
-                <li class="nav-item col-2 nav-page">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                    <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="50"
-                      fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                      <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
-                      <circle cx="25" cy="27" r="2" />
-                      <circle cx="12" cy="27" r="2" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-
+              </div>
+            </li>
+            <li class="col-2">
+              <div>
+                <span class="text-white-50 fs-6">Returns</span> <br>
+                <span class="fw-bold fs-">&Orders</span>
+              </div>
+            </li>
+            <li class="col-3">
+              <div class="cart-container border-white fs-4">
+                <i class="fa-solid fa-cart-shopping "></i>
+                Cart
+              </div>
             </li>
           </ul>
         </div>
       </div>
-    </nav>
-    <nav class="navbar row nav-two">
-      <div class="container-fluid d-flex flex-row" style="box-sizing: border-box;">
-        <div class="navbar d-flex">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row" style="box-sizing: border-box;">
-            <button class="p-0 btn navbar-brand secondNavItem" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
-                class="fa-solid fa-bars"></i> all</button>
-
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" aria-current="page" href="#">Todays Deals</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle secondNavItem" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Prime
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </div>
+    <div class="container-fluid  navv p-2">
+      <div class=" d-flex justify-content-between  ">
+          <div class="">
+              <ul class="list-unstyled  d-flex flex-wrap text-white align-items-center m-0 ">
+                  <li class="px-3" id="allbtn">
+                      <i class="fa-solid fa-bars">All</i>
+                  </li>
+                  <a href="../Today'sDeals.html" class="px-3 text-decoration-none text-light">Today's Deals</a>
+                  <a href="./prime/prime.html" class="px-3 text-decoration-none text-light">prime</a>
+                  <a href="../mobilePhone.html" class="px-3 text-decoration-none text-light">Mobile Phone</a>
+                  <a href="../Electronics/index.html" class="px-3 text-decoration-none text-light">Electronics</a>
+                  
+                  <li class="px-3">Gift Cards</li>
+                  <li class="px-3">Sell</li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Mobile Phones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Electronics</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Appliances</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Fashion</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">video Games</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Toys & Game</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">grocery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Perfumes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Your amazon.eg</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Coupons</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">Help</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link secondNavItem" href="#">sell</a>
-            </li>
-          </ul>
-        </div>
-
+          </div>
+          <div class=" text-white">Shop deals in Electronics</div>
       </div>
-    </nav>
+
   </div>
+    </div>
   <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
     aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header">

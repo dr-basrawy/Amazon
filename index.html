@@ -15,85 +15,106 @@
 
 <body>
     <div class="big container-fluid p-0">
-        <!-- top nav bar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pt-1">
-            <div class="container-fluid">
-                <a class="navbar-brand nav-page me-0 col-lg-1 col-6" href="#">
-                    <img class="col-12 logo-image" src="./img/amazon-logo.svg"
-                        alt="Amazon-Logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse col-11" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-0 d-flex align-items-center col-12">
-                        <li class="nav-item nav-page ">
-                            <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                                <span class="ms-3 text-secondary small">Hello</span>
-                                <span><i class="fa-solid fa-location-dot"></i> Select Your Address</span>
-                            </a>
-                        </li>
-                        <li class="nav-item col-7">
-                            <div class="input-group mt-3 mb-3">
-                                <button type="button" class="btn dropdown-toggle seachBar-dropDown" data-bs-toggle="dropdown">
-                                    all
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Link 1</a></li>
-                                    <li><a class="dropdown-item" href="#">Link 2</a></li>
-                                    <li><a class="dropdown-item" href="#">Link 3</a></li>
-                                </ul>
-                                <input type="text" class="form-control" placeholder="search amazon.eg">
-                                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
-                            </div>
-                        </li>
-                   <li  class="nav-item col-3">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between col-12">
-                      <div class="nav-item col-3 nav-page d-flex align-items-center">
-                        <div class="dropdown">
-                            <a class="nav-link dropdown-toggle text-bg-dark pic-lang" href="#" role="button" id="languageDropdown"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="Lang-Flags text-bg-dark" src="./img/usa.svg" alt="us">
-                                English
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="./img/egypt.svg"
-                                            alt="egypt"> Arabic</a></li>
-                                <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="./img/france.svg"
-                                            alt="france"> French</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <li class="nav-item col-4 nav-page">
-                        <a class="nav-link active d-flex flex-column" aria-current="page" href="./user/login.html">
-                            <span class="text-secondary small" id="userName">Hello sign In</span>
-                            <span>Account&lists </span>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2 nav-page">
-                        <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                            <span class="mt-4">Orders</span>
-                        </a>
-                    </li>
-                    <li class="nav-item col-2 nav-page">
-                        <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                            <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="50"
-                                fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2">
-                                <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
-                                <circle cx="25" cy="27" r="2" />
-                                <circle cx="12" cy="27" r="2" />
-                            </svg>
-                        </a>
-                    </li>
-                  </ul>
-        
-                   </li>
-                    </ul>
+        <div class="container-fluid p-2 bg-dark">
+            <div class="row m-0 align-items-center">
+              <div class="col-12 col-md-2 logo d-flex flex-wrap">
+                <img class="col-6" src="./img/images-removebg-preview.png" alt="logo">
+                <div class="ps-3 col-6 d-flex align-items-center">
+                  <div class=""><i class="fa-solid fa-location-dot icon-location text-white"></i></div>
+                  <div class="text-white d-flex flex-column ps-2">
+                    <span class="text-white-50 fs-6">Deliver to</span>
+                    <span class="fw-bold fs-">EGYPT</span>
+                  </div>
                 </div>
+      
+              </div>
+              <div class="col-12 col-md-6 py-2 py-md-0 pe-0">
+                <div class="search-container">
+                  <select class="search-select ">
+                    <option>All</option>
+                  </select>
+                  <input type="text" class="search-input " placeholder="Search Amazon for iti" />
+                  <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+      
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <ul class="list-unstyled  d-flex flex-wrap text-white align-items-center justify-content-evenly m-0">
+                  <li class="col-2 justify-content-start m-0">
+                    <div class="dropdown">
+                      <a class="btn text-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/egypt_round_icon_640.png" width="20px" alt="">
+                        EG
+                      </a>
+                      <ul class="dropdown-menu px-2 " aria-labelledby="dropdownMenuLink">
+                        <li class="py-2">
+                          <input type="radio" name="lang" id="ar">
+                          <img src="./img/ksa.png" width="19px" alt="">
+                          <label for="ar">Arabic</label>
+                        </li>
+                        <li class="py-2">
+                          <input type="radio" name="lang" id="en">
+                          <img src="./img/us.png" width="19px" alt="">
+                          <label for="en">English (US)</label>
+                        </li>
+                        <li class="py-2">
+                          <input type="radio" name="lang" id="fr">
+                          <img src="./img/fr.png" width="19px" alt="">
+                          <label for="fr">France</label>
+                        </li>
+      
+                      </ul>
+                    </div>
+                  </li>
+                  <li  class="col-5">
+                    <div class="dropdown">
+                      <a class="btn text-white dropdown-toggle text-start" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="fw-normal">Hello,sign in</span> <br>
+                        <span class="fw-bolder">Account & Lists</span>
+                      </a>
+      
+                      <div class="dropdown-menu text-center" aria-labelledby="dropdownMenuLink">
+                        <button type="button" class="btn btn-warning text-center">Warning</button>
+                        <h2>dsfghjk</h2>
+                        <div class="d-flex w-600px">
+                          <div>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore maxime
+                              enim
+                              cum nam dolor, incidunt quis iure maiores, dolore impedit
+                              , hic sunt distinctio earum eaque officia perspiciatis tenetur
+                              perferendis
+                              porro.</p>
+                          </div>
+                          <div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni nemo
+                              suscipit, quia dicta odio, ratione quos illum omnis quis hic la
+                              bore voluptatibus. Tempora expedita libero necessitatibus nesciunt quas
+                              minima.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="col-2">
+                    <div>
+                      <span class="text-white-50 fs-6">Returns</span> <br>
+                      <span class="fw-bold fs-">&Orders</span>
+                    </div>
+                  </li>
+                  <li class="col-3">
+                    <div class="cart-container border-white fs-4">
+                      <i class="fa-solid fa-cart-shopping "></i>
+                      Cart
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </nav>
+          </div>
         <!-- sec nav bar -->
         <div class="container-fluid  navv p-2">
             <div class=" d-flex justify-content-between  ">
