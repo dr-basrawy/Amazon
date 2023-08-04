@@ -25,7 +25,10 @@ transform: translateY(-50%);
   display: flex;
 }
 }
-
+body{
+  overflow: hidden;
+}
+ 
 .carousel-item .card {
 height: 60vh;
 border: 0;
