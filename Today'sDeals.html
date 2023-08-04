@@ -17,88 +17,70 @@
 
 <body>
   <div class="container-fluid topNavBar">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark row pt-1">
+    <nav class="navbar navbar-expand firstNavBar row">
       <div class="container-fluid">
-        <a class="navbar-brand nav-page me-0 col-lg-1 col-6" href="./index.html">
-          <img class="col-12 logo-image" src="./img/amazon-logo.svg" alt="Amazon-Logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse col-11" id="navbarSupportedContent">
-          <ul class="navbar-nav m-0 d-flex align-items-center col-12">
-            <li class="nav-item nav-page ">
-              <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                <span class="ms-3 text-secondary small">Hello</span>
-                <span><i class="fa-solid fa-location-dot"></i> Select Your Address</span>
-              </a>
+        <a class="navbar-brand nav-item" href="#"><img src="./img/AMZN_BIG.D.svg" alt="" srcset=""></a> 
+        <div class="collapse navbar-collapse" id="mynavbar">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item nav-item2 d-flex flex-column justify-content-center align-items-center p-0">
+                  <span class="text-secondary fw-bold" style="font-size: 12px;">Deliver To</span>
+                  <span><i class="fa-solid fa-location-dot"></i><span class="fw-bold" style="font-size: 16px;">Egypt</span></span>
             </li>
-            <li class="nav-item col-7">
-              <div class="input-group mt-3 mb-3">
-                <button type="button" class="btn dropdown-toggle seachBar-dropDown" data-bs-toggle="dropdown">
-                  all
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Link 1</a></li>
-                  <li><a class="dropdown-item" href="#">Link 2</a></li>
-                  <li><a class="dropdown-item" href="#">Link 3</a></li>
-                </ul>
-                <input type="text" class="form-control" placeholder="search amazon.eg">
-                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <li class="nav-item nav-item3 d-flex align-items-center">
+              <div class="input-group searchbar mt-3 mb-3">
+                  <button type="button" class="btn dropdown-toggle bg-body-secondary seachBar-dropDown" data-bs-toggle="dropdown">
+                      all
+                  </button>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Link 1</a></li>
+                      <li><a class="dropdown-item" href="#">Link 2</a></li>
+                      <li><a class="dropdown-item" href="#">Link 3</a></li>
+                  </ul>
+                  <input type="text" class="form-control" placeholder="search amazon.eg">
+                  <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
               </div>
             </li>
-            <li class="nav-item col-3">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center justify-content-between col-12">
-                <div class="nav-item col-3 nav-page d-flex align-items-center">
-                  <div class="dropdown">
-                    <a class="nav-link dropdown-toggle text-bg-dark pic-lang" href="#" role="button"
-                      id="languageDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <img class="Lang-Flags text-bg-dark" src="./img/usa.svg" alt="us">
-                      English
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="./img/egypt.svg" alt="egypt">
-                          Arabic</a></li>
-                      <li><a class="dropdown-item" href="#"><img class="Lang-Flags" src="./img/france.svg" alt="france">
-                          French</a></li>
-                    </ul>
-                  </div>
+            <li class="nav-item nav-item4 d-flex align-items-center justify-content-start">
+              <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span>
+                      <img src="./img/Flag_of_Egypt.svg" alt="Flag_of_Egypt">
+                      <span>EN</span>
+                    </span>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">العربية-AR</a></li>
+                    <li><a class="dropdown-item" href="#">English-EN</a></li>
+                    <li class=" d-flex overflow-hidden"><a href="#" class="dropdown-item text-decoration-none text-dark"><img src="./images/Flag_of_Egypt.svg" alt="Flag_of_Egypt">You are shopping amazon.eg</a></li>
+                  </ul>
                 </div>
-
-                <li class="nav-item col-4 nav-page">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                    <span class="text-secondary small" id="userName">Hello sign In</span>
-                    <span>Account&lists </span>
-                  </a>
-                </li>
-                <li class="nav-item col-2 nav-page">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                    <span class="mt-4">Orders</span>
-                  </a>
-                </li>
-                <li class="nav-item col-2 nav-page">
-                  <a class="nav-link active d-flex flex-column" aria-current="page" href="#">
-                    <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="35" height="50"
-                      fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                      <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
-                      <circle cx="25" cy="27" r="2" />
-                      <circle cx="12" cy="27" r="2" />
-                    </svg>
-                  </a>
-                </li>
-              </ul>
-
+              
             </li>
+            <li class="nav-item nav-item5 d-flex flex-column align-items-center  p-0">
+            <span class="fw-bold h-25" style="font-size: 12px;">Hello,signin</span>
+            <div class="dropdown h-25 fw-bold" style="font-size: 12px;" >
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accounts&Lists
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+              
+            </li>
+            <li class="nav-item nav-item6 d-flex align-items-end"> Orders</li>
+            <li class="nav-item nav-item7 pt-2 "> <span class="d-flex align-items-baseline fw-bold text-light"><img src="./img/add-to-cart-3046.svg" alt="cart">Cart</span></li>
           </ul>
         </div>
       </div>
     </nav>
-    <nav class="navbar row nav-two">
-      <div class="container-fluid d-flex flex-row" style="box-sizing: border-box;">
-        <div class="navbar d-flex">
-
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row" style="box-sizing: border-box;">
-            <button class="p-0 btn navbar-brand secondNavItem" type="button" data-bs-toggle="offcanvas"
+    <nav class="navbar row nav-two  p-0">
+      <div class="container-fluid" style="box-sizing: border-box;">
+        <div class="navbar d-flex align-items-center row">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row " style="box-sizing: border-box; margin-top: -7px;">
+            <button class="p-0 btn  secondNavItem" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
                 class="fa-solid fa-bars"></i> all</button>
 
