@@ -28,7 +28,7 @@ transform: translateY(-50%);
 body{
   overflow-x: hidden;
 }
- 
+
 .carousel-item .card {
 height: 60vh;
 border: 0;
