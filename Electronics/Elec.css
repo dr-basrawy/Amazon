@@ -87,6 +87,9 @@ display: none;
   font-size: 14px;
   padding: 4px;
 }
+.third-nav{
+font-size: 0.9vw ;
+}
 @media screen and (max-width:992px) {
   .nav-two {
       padding: 5px  !important;
@@ -103,11 +106,17 @@ display: none;
   .nav-two {
     display: none;
   }
+  
+ 
+}
+@media screen and (max-width:1010px) {
   .third-nav{
     display: none;
   }
  
+ 
 }
+
 
 /* footer */
 :root {
